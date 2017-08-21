@@ -1,0 +1,16 @@
+#footnote {
+   font-size: 10px;
+   font-style: italic;
+   position: fixed;
+   top: 575px;
+   left: 100px;
+}
+
+strong {
+  font-weight: bold;
+  color: blue;
+}
+
+slides > slide.backdrop {
+  background: white;
+}
