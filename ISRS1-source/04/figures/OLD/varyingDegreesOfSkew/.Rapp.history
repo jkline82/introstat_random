@@ -1,0 +1,6765 @@
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 3.5, 1.7, mar=c(1.7,0,0.1,0), mgp=c(3,0.5,0))#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 3.5, 1.7, mar=c(1.7,0,0.1,0), mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4)#
+layout(M, c(1,2,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 10, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4)#
+layout(M, c(1,2,2))#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="")#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 10, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4)#
+layout(M, c(1,2,2))#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 10, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 7, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 5, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally\ndistributed\n(2+ observations)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric,\nno outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally\ndistributed\n(n > 1)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric,\nno outliers\n(n > 4)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally\ndistributed\n(n > 1)")#
+par(mar=c(2,0,1,2)))#
+X <- seq(-4, 4, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE)#
+axis(1, at=-3:3, labels=rep("", 7))#
+#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric,\nno outliers\n(n > 4)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally\ndistributed\n(n > 1)")#
+par(mar=c(2,0,1,2)))#
+X <- seq(-4, 4, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE)#
+axis(1, at=-3:3, labels=rep("", 7))#
+abline(h=0)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric,\nno outliers\n(n > 4)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 5, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally\ndistributed\n(n > 1)")#
+par(mar=c(2,0,1,2)))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-3:3, labels=rep("", 7))#
+abline(h=0)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric,\nno outliers\n(n > 4)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+par(mar=c(2,0,1,2)))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-3:3, labels=rep("", 7))#
+abline(h=0)#
+x <- #
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric,\nno outliers expected\nor observed\n(5+ observations)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+par(mar=c(2,0,1,2)))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-3:3, labels=rep("", 7))#
+abline(h=0)#
+x <- #
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+par(mar=c(2,0,1,2)))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+x <- #
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2)))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+par(mar=c(2,0,1,2))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+x <- #
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+par(mar=c(2,1,1,2))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+x <- #
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+x <- #
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(1)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE)#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(1)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, xlab="", ylab="", main="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(1)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(1)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(3,0.5,0), mgp=c(0.6, 0.55, 0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(1)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.6, 0.55, 0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(1)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:12, 4, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+#
+X <- seq(-4,4,0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type='l', axes=F, xlim=c(-3.4,3.4))#
+axis(1, at=c(-5, 0, 0.89, 5), label=expression(0, 0.50, 0.52, 0), cex.axis=0.9)#
+these <- which((X >= 0.89))#
+polygon(c(X[these[1]], X[these],X[rev(these)[1]]), c(0,Y[these],0), col='#CCCCCC', border='#000000BB')#
+#
+lines(X, Y)#
+abline(h=0)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X) + dunif(X, -2, 2)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + #
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + temp(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.1*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + temp(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.02*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + temp(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + temp(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8), ylim=c(0, 0.38))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- rnorm(x) + dunif(X, -2, 2)/3#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- rnorm(X) + dunif(X, -2, 2)/3#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X) + dunif(X, -2, 2)/3#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)/3#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)/3#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(never actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 6, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X, sd=0.3) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+temp <- function(x){ 0.01*ifelse(abs(x) < 2, -x^2 + 4, 0) }#
+Y    <- dnorm(X, sd=0.3) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dnorm(X, sd=0.3)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- exp(dnorm(X, sd=0.3))#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dgamma(X, 1, 1)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dgamma(X, 2, 1)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dnorm(X) + dgamma(X, 2, 1)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- exp(X/2)*dnorm(X)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- exp(X)*dnorm(X)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dnorm(X) + dnorm(X, 2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dnorm(X) + dnorm(X, 1, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 8, 0.01)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 7))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 2) + dnorm(X, 2.5, 3)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+#_____ Normal _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+par(mar=c(2,1,1,2.5))#
+X <- seq(-5, 5, 0.01)#
+Y <- dnorm(X)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(7)#
+histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#_____ Symmetric _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 5, 0.01)#
+Y    <- dt(X, 10) + dunif(X, -2, 2)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+axis(1, at=-4:4, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 1.8) + dnorm(X, 2.5, 3)#
+#dnorm(X) + dunif(X, -2, 2) + dunif(X, -1, 1)/2 + dunif(X, -0.5, 0.5)/4#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 1.8) + dnorm(X, 2.5, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 1.8) + dnorm(X, 2.5, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 9))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 21))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+axis(1, at=-10:10, labels=rep("", 21))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew, no outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:18, 6, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(5+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dgamma(#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dgamma(#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dgamma(X, 2, 1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dgamma(X, 5, 1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dgamma(X, 0.8, 1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- 1/X^3#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.025)#
+Y    <- 1/X^3#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- 1/X^3#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- 1/X#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.1, 1.1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)*X#
+Y    <- dgamma(X, 1.1, 1.1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.1, 1.1)*X#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 1.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25) + dnorm(X, 3, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1.25, 1.5) + dnorm(X, 2.25, 2.25) + dnorm(X, 4, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 15, 0.1)#
+Y    <- dnorm(X) + dnorm(X, 1.25, 1.5) + dnorm(X, 2.25, 2.25) + dnorm(X, 4, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 13))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 15, 0.1)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 1.5) + dnorm(X, 2.5, 2.25) + dnorm(X, 4, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 13))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 15, 0.1)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 1.5) + dnorm(X, 2.5, 2.25) + dnorm(X, 5, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 13))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 15, 0.1)#
+Y    <- dnorm(X) + dnorm(X, 1.5, 1.5) + dnorm(X, 3, 2.25) + dnorm(X, 5, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 13))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 15, 0.1)#
+Y    <- dnorm(X) + dnorm(X, 1.25, 1.5) + dnorm(X, 3, 2.25) + dnorm(X, 5, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 13))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()
+require(openintro)#
+set.seed(2)#
+#
+myPDF('varyingDegreesOfSkew.pdf', 6, 7.5, mgp=c(0.55, 0.55, 0))#
+M <- matrix(1:15, 5, byrow=TRUE)#
+layout(M, c(1,2,2), c(1.5, 5, 5, 5, 5))#
+#
+#_____ Headings _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Distribution example\n(exact distributions are\nnever actually observed)")#
+#
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Sample observations")#
+#
+#
+# #_____ Normal _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Normally distributed\n(2+ observations)")#
+#
+# par(mar=c(2,1,1,2.5))#
+# X <- seq(-5, 5, 0.01)#
+# Y <- dnorm(X)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-3.8, 3.8))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(7)#
+# histPlot(x, axes=FALSE, ylab="", xlab="7 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+# #_____ Symmetric _____##
+# par(mar=rep(0,4))#
+# plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+# text(0.5, 0.5, "Symmetric, no outliers\n(5+ observations)")#
+# par(mar=c(2,0,1,2))#
+#
+# par(mar=c(2,1,1,2.5))#
+# X    <- seq(-5, 5, 0.01)#
+# Y    <- dt(X, 10) + dunif(X, -2, 2)#
+# plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 4))#
+# axis(1, at=-4:4, labels=rep("", 9))#
+# abline(h=0)#
+#
+# par(mar=c(2,3.2,1,0.3))#
+# x <- rnorm(10)#
+# histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+# axis(2, 0:5)#
+# rug(x)#
+#
+#
+#_____ Slight skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Slight skew,\nno outliers\n(10+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 12, 0.025)#
+Y    <- dnorm(X) + dnorm(X, 1, 1.5) + dnorm(X, 2, 2.25)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Moderate skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Moderate skew,\nno outliers\n(20+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(-5, 15, 0.1)#
+Y    <- dnorm(X) + dnorm(X, 1.25, 1.5) + dnorm(X, 3, 2.25) + dnorm(X, 5, 3)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(-4, 13))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="20 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+#_____ Strong skew _____##
+par(mar=rep(0,4))#
+plot(0:1, 0:1, type="n", xlab="", ylab="", axes=FALSE)#
+text(0.5, 0.5, "Strong skew,\nmay contain\nmoderate outliers\n(50+ observations)")#
+par(mar=c(2,0,1,2))#
+#
+par(mar=c(2,1,1,2.5))#
+X    <- seq(0, 12, 0.05)#
+Y    <- dgamma(X, 1.2, 1.1)*(X+1) + ifelse(X>0, dnorm(X, 1, 2.5), 0)#
+plot(X, Y, type="l", xlab="", ylab="", axes=FALSE, xlim=c(0, 10))#
+abline(h=0)#
+#
+par(mar=c(2,3.2,1,0.3))#
+x <- rnorm(10)#
+histPlot(x, axes=FALSE, ylab="", xlab="10 observations")#
+axis(2, 0:5)#
+rug(x)#
+#
+#
+dev.off()

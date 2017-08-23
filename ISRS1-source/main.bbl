@@ -1,0 +1,1494 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{irisPic}{misc}{}
+  \field{note}{Photo by rtclauss on Flickr,
+  \href{http://www.flickr.com/photos/rtclauss/3834965043}{Iris}.}
+\endentry
+
+\entry{data:smoking}{misc}{}
+  \field{note}{Stats4Schools,
+  \href{http://www.rsscse.org.uk/stats4schools/large_datasets/smoking/default.html}{Smoking}.}
+\endentry
+
+\entry{data:ciaFactBookLifeExp:2012}{misc}{}
+  \field{note}{CIA Factbook,
+  \href{https://www.cia.gov/library/publications/the-world-factbook/rankorder/2102rank.html}{Country
+  Comparison: Life Expectancy at Birth, 2012}.}
+\endentry
+
+\entry{data:ITU:2012}{misc}{}
+  \field{note}{ITU World Telecommunication/ICT Indicators database,
+  \href{http://www.itu.int/ITU-D/ict/statistics/index.html}{World
+  Telecommunication/ICT Indicators Database, 2012}}
+\endentry
+
+\entry{data:ciaFactBookInfMort:2012}{misc}{}
+  \field{note}{CIA Factbook,
+  \href{https://www.cia.gov/library/publications/the-world-factbook/rankorder/2091rank.html}{Country
+  Comparison: Infant Mortality Rate, 2012}}
+\endentry
+
+\entry{data:durhamAQI:2011}{misc}{}
+  \field{note}{US Environmental Protection Agency,
+  \href{http://www.epa.gov/airdata/ad\_data\_daily.html}{AirData, 2011.}}
+\endentry
+
+\entry{survey:immigFL:2012}{misc}{}
+  \field{note}{SurveyUSA,
+  \href{http://www.surveyusa.com/client/PollReport.aspx?g=60d6fa81-2698-4c51-a5f8-714f40976df2}{News
+  Poll \#18927}, data collected Jan 27-29, 2012}
+\endentry
+
+\entry{data:yawn}{misc}{}
+  \field{note}{MythBusters,
+  \href{http://www.yourdiscovery.com/video/mythbusters-top-10-is-yawning-contagious}{Season
+  3, Episode 28.}}
+\endentry
+
+\entry{data:egypt}{misc}{}
+  \field{note}{Gallup Politics,
+  \href{http://www.gallup.com/poll/146003/americans-views-egypt-sharply-negative.aspx}{Americans'
+  Views of Egypt Sharply More Negative}, data collected February 2-5, 2011.}
+\endentry
+
+\entry{data:prop19_and_offshoreDrill}{misc}{}
+  \field{note}{Survey USA,
+  \href{http://www.surveyusa.com/client/PollReport.aspx?g=d525bd62-80d2-4884-86a1-8c48ad920150}{Election
+  Poll \#16804}, data collected July 8-11, 2010.}
+\endentry
+
+\entry{data:healthcare2010}{misc}{}
+  \field{note}{Gallup,
+  \href{http://www.gallup.com/poll/155447/Americans-Issue-Split-Decision-Healthcare-Ruling.aspx}{Americans
+  Issue Split Decision on Healthcare Ruling}, data collected June 28, 2012.}
+\endentry
+
+\entry{data:july4}{misc}{}
+  \field{note}{Survey USA,
+  \href{http://www.surveyusa.com/client/PollReport.aspx?g=9f76df27-701b-4223-bf0f-3a6027b80321}{News
+  Poll \#19333}, data collected on June 27, 2012.}
+\endentry
+
+\entry{data:elderlyDriving}{misc}{}
+  \field{note}{Marist Poll,
+  \href{http://maristpoll.marist.edu/34-road-rules-re-testing-drivers-at-age-65}{Road
+  Rules: Re-Testing Drivers at Age 65?}, March 4, 2011}
+\endentry
+
+\entry{data:suffering}{misc}{}
+  \field{note}{Gallup World,
+  \href{http://www.gallup.com/poll/153869/One-Suffering-Worldwide.aspx}{More
+  Than One in 10 ``Suffering" Worldwide}, data collected throughout 2011.}
+\endentry
+
+\entry{data:studyAbroad}{misc}{}
+  \field{note}{studentPOLL,
+  \href{http://www.gallup.com/poll/153869/One-Suffering-Worldwide.aspx}{College-Bound
+  Students' Interests in Study Abroad and Other International Learning
+  Activities}, January 2008}
+\endentry
+
+\entry{data:gss:2010}{misc}{}
+  \field{note}{National Opinion Research Center,
+  \href{http://www3.norc.org/gss+website}{General Social Survey, 2010}.}
+\endentry
+
+\entry{data:civilWar}{misc}{}
+  \field{note}{Pew Research Center Publications,
+  \href{http://pewresearch.org/pubs/1958/civil-war-still-relevant-and-divisive-praise-confederate-leaders-flag}{Civil
+  War at 150: Still Relevant, Still Divisive}, data collected between March 30
+  - April 3, 2011.}
+\endentry
+
+\entry{data:mobileBrowse}{misc}{}
+  \field{note}{Pew Internet,
+  \href{http://www.pewinternet.org/Reports/2012/Cell-Internet-Use-2012.aspx}{Cell
+  Internet Use 2012}, data collected between March 15 - April 13, 2012.}
+\endentry
+
+\entry{data:collegeWorthIt}{misc}{}
+  \field{note}{Pew Research Center Publications,
+  \href{http://pewresearch.org/pubs/1993/survey-is-college-degree-worth-cost-debt-college-presidents-higher-education-system}{Is
+  College Worth It?}, data collected between March 15-29, 2011.}
+\endentry
+
+\entry{data:dailyShow}{misc}{}
+  \field{note}{The Pew Research Center,
+  \href{http://www.people-press.org/files/legacy-pdf/652.pdf}{Americans
+  Spending More Time Following the News}, data collected June 8-28, 2010.}
+\endentry
+
+\entry{data:sleepCAandOR}{misc}{}
+  \field{note}{CDC,
+  \href{http://www.cdc.gov/mmwr/preview/mmwrhtml/mm5842a2.htm}{Perceived
+  Insufficient Rest or Sleep Among Adults --- United States, 2008}}
+\endentry
+
+\entry{data:sleepTransport}{misc}{}
+  \field{note}{National Sleep Foundation,
+  \href{http://www.sleepfoundation.org/2012poll}{2012 Sleep in America Poll:
+  Transportation Workers’ Sleep}, 2012}
+\endentry
+
+\entry{data:employmentDiabetes}{misc}{}
+  \field{note}{Gallup Wellbeing,
+  \href{http://www.gallup.com/poll/155408/Employed-Americans-Better-Health-Unemployed.aspx}{Employed
+  Americans in Better Health Than the Unemployed}, data collected Jan. 2, 2011
+  - May 21, 2012.}
+\endentry
+
+\entry{CreationismGallup}{misc}{}
+  \field{note}{Four in 10 Americans Believe in Strict Creationism, December 17,
+  2010,
+  \urlwofont{http://www.gallup.com/poll/145286/Four-Americans-Believe-Strict-Creationism.aspx}}
+\endentry
+
+\entry{data:facebookPrivacy}{misc}{}
+  \field{note}{Survey USA,
+  \href{http://www.surveyusa.com/client/PollPrint.aspx?g=2ef98776-a34d-419f-bb2e-466ef4098289&d=0}{News
+  Poll \#17960}, data collected February 16-17, 2011.}
+\endentry
+
+\entry{data:prius}{misc}{}
+  \field{note}{Fuelecomy.gov,
+  \href{http://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=31767&browser=true&details=on}{Shared
+  MPG Estimates: Toyota Prius 2012}.}
+\endentry
+
+\entry{web:naep}{misc}{}
+  \field{note}{National Center for Education Statistics,
+  \href{http://nces.ed.gov/nationsreportcard/about/naeptools.asp}{NAEP Data
+  Explorer}}
+\endentry
+
+\entry{data:china}{misc}{}
+  \field{note}{UNC Carolina Population Center,
+  \href{http://www.cpc.unc.edu/projects/china}{China Health and Nutrition
+  Survey, 2006}.}
+\endentry
+
+\entry{data:oscars}{misc}{}
+  \field{note}{Oscar winners from 1929 -- 2012, data up to 2009 from the
+  \href{http://www.amstat.org/publications/jse/jse_data_archive.htm}{Journal of
+  Statistics Education data archive} and more current data from
+  \href{http://www.wikipedia.org/}{wikipedia.org}.}
+\endentry
+
+\entry{data:chickwts}{misc}{}
+  \field{note}{\href{http://stat.ethz.ch/R-manual/R-patched/library/datasets/html/chickwts.html}{Chicken
+  Weights by Feed Type}, from the \texttt{datasets} package in R.}
+\endentry
+
+\entry{data:epaMPG}{misc}{}
+  \field{note}{U.S. Department of Energy,
+  \href{http://www.fueleconomy.gov/feg/download.shtml}{Fuel Economy Data, 2012
+  Datafile}.}
+\endentry
+
+\entry{data:prison}{misc}{}
+  \field{note}{\href{http://stat.duke.edu/resources/datasets/prison-isolation}{Prison
+  isolation experiment}.}
+\endentry
+
+\entry{data:trees}{misc}{}
+  \field{note}{Source: R Dataset,
+  \urlwofont{http://stat.ethz.ch/R-manual/R-patched/library/datasets/html/trees.html}}
+\endentry
+
+\entry{data:turkeyTourism}{misc}{}
+  \field{note}{Association of Turkish Travel Agencies,
+  \href{http://www.tursab.org.tr/en/statistics/foreign-visitors-figure-tourist-spendings-by-years_1083.html}{Foreign
+  Visitors Figure \& Tourist Spendings By Years}}
+\endentry
+
+\entry{data:starbucksCals}{misc}{}
+  \field{note}{Source: Starbucks.com, collected on March 10, 2011, \\
+  http://www.starbucks.com/menu/nutrition}
+\endentry
+
+\entry{data:urbanOwner}{misc}{}
+  \field{note}{United States Census Bureau,
+  \href{http://www.census.gov/geo/www/ua/2010urbanruralclass.html}{2010 Census
+  Urban and Rural Classification and Urban Area Criteria} and
+  \href{http://www.census.gov/prod/cen2010/briefs/c2010br-07.pdf}{Housing
+  Characteristics: 2010}.}
+\endentry
+
+\entry{data:babies}{misc}{}
+  \field{note}{Child Health and Development Studies,
+  \href{http://www.ma.hw.ac.uk/~stan/aod/library}{Baby weights data set}}
+\endentry
+
+\entry{Allais:2011}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Allais}{A.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Romoli}{R.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rolando}{R.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Airola}{A.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Castagnoli~Gabellari}{C.~G.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Allais}{A.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Benedetto}{B.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{AG+1}
+  \strng{fullhash}{AGRMRSAGCGIARBC1}
+  \field{sortinit}{A}
+  \field{number}{1}
+  \field{pages}{173\bibrangedash 175}
+  \field{title}{\href{http://www.ncbi.nlm.nih.gov/pubmed/21533739}{Ear
+  acupuncture in the treatment of migraine attacks: a randomized trial on the
+  efficacy of appropriate versus inappropriate acupoints}}
+  \field{volume}{32}
+  \field{journaltitle}{Neurological Sci.}
+  \field{year}{2011}
+\endentry
+
+\entry{Allison+Cicchetti:1975}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Allison}{A.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cicchetti}{C.}%
+     {D.V.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ATCD1}
+  \strng{fullhash}{ATCD1}
+  \field{sortinit}{A}
+  \field{pages}{442}
+  \field{title}{\href{http://www.faculty.biol.ttu.edu/strauss/Multivar/Lab/AllisonCicchetti1976.pdf}{Sleep
+  in mammals: ecological and constitutional correlates}}
+  \field{volume}{75}
+  \field{journaltitle}{Arch. Hydrobiol}
+  \field{year}{1975}
+\endentry
+
+\entry{Audera:2001}{article}{}
+  \true{moreauthor}
+  \name{author}{4}{}{%
+    {{}%
+     {Audera}{A.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patulny}{P.}%
+     {R.V.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sander}{S.}%
+     {B.H.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Douglas}{D.}%
+     {R.M.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AUSTRALASIAN MEDICAL PUBLISHING COMPANY LTD}%
+  }
+  \strng{namehash}{AC+1}
+  \strng{fullhash}{ACPRSBDR+1}
+  \field{sortinit}{A}
+  \field{number}{7}
+  \field{pages}{359\bibrangedash 362}
+  \field{title}{\href{https://www.mja.com.au/journal/2001/175/7/mega-dose-vitamin-c-treatment-common-cold-randomised-controlled-trial}{Mega-dose
+  vitamin C in treatment of the common cold: a randomised controlled trial}}
+  \field{volume}{175}
+  \field{journaltitle}{Medical Journal of Australia}
+  \field{year}{2001}
+\endentry
+
+\entry{news:publicOption}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Balz}{B.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cohen}{C.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BDCJ1}
+  \strng{fullhash}{BDCJ1}
+  \field{sortinit}{B}
+  \field{title}{\href{http://www.washingtonpost.com/wp-dyn/content/article/2009/10/19/AR2009101902451.html}{Most
+  support public option for health insurance, poll finds}}
+  \field{journaltitle}{The Washington Post}
+  \field{year}{2009}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Benson:1993}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Benson}{B.}%
+     {J.B.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{BJ1}
+  \strng{fullhash}{BJ1}
+  \field{sortinit}{B}
+  \field{issn}{0163-6383}
+  \field{number}{1}
+  \field{pages}{69\bibrangedash 81}
+  \field{title}{\href{http://www.sciencedirect.com/science/article/pii/0163638393800298}{Season
+  of birth and onset of locomotion: Theoretical and methodological
+  implications}}
+  \field{volume}{16}
+  \field{journaltitle}{Infant behavior and development}
+  \field{year}{1993}
+\endentry
+
+\entry{web:art}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {CDC}{C.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{C1}
+  \strng{fullhash}{C1}
+  \field{sortinit}{C}
+  \field{title}{\href{http://www.cdc.gov/art/ART2008/index.htm}{2008 Assisted
+  Reproductive Technology Report}}
+\endentry
+
+\entry{news:mobileBrowseChinese}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chang}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CS1}
+  \strng{fullhash}{CS1}
+  \field{sortinit}{C}
+  \field{title}{\href{http://micgadget.com/24163/the-chinese-love-to-use-feature-phone-to-access-the-internet/}{The
+  Chinese Love to Use Feature Phone to Access the Internet}}
+  \field{journaltitle}{M.I.C Gadget}
+  \field{year}{2012}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{news:fullBodyScan}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Condon}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CS2}
+  \strng{fullhash}{CS2}
+  \field{sortinit}{C}
+  \field{title}{\href{http://www.cbsnews.com/8301-503544_162-20022876-503544.html}{Poll:
+  4 in 5 Support Full-Body Airport Scanners}}
+  \field{journaltitle}{CBS News}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{news:youngAmericans2}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Demos.org}{D.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{D1}
+  \strng{fullhash}{D1}
+  \field{sortinit}{D}
+  \field{title}{\href{http://www.demos.org/publication/state-young-america-poll}{The
+  State of Young America: The Poll}}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Ellis:2001}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ellis}{E.}%
+     {L}{L}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ficek}{F.}%
+     {C}{C}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{ELFC1}
+  \strng{fullhash}{ELFC1}
+  \field{sortinit}{E}
+  \field{number}{8}
+  \field{pages}{1375\bibrangedash 1379}
+  \field{title}{{\href{http://www.sciencedirect.com/science/article/pii/S0191886900002312}{Color
+  preferences according to gender and sexual orientation}}}
+  \field{volume}{31}
+  \field{journaltitle}{Personality and Individual Differences}
+  \field{year}{2001}
+\endentry
+
+\entry{Felton:2004}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Felton}{F.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mitchell}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stinson}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Taylor \& Francis}%
+  }
+  \strng{namehash}{FJ+1}
+  \strng{fullhash}{FJMJSM1}
+  \field{sortinit}{F}
+  \field{number}{1}
+  \field{pages}{91\bibrangedash 108}
+  \field{title}{Web-based student evaluations of professors: the relations
+  between perceived quality, easiness and sexiness}
+  \field{volume}{29}
+  \field{journaltitle}{Assessment \& Evaluation in Higher Education}
+  \field{year}{2004}
+\endentry
+
+\entry{Fisher:1936}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Fisher}{F.}%
+     {R.A}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FR1}
+  \strng{fullhash}{FR1}
+  \field{sortinit}{F}
+  \field{pages}{179\bibrangedash 188}
+  \field{title}{\href{http://onlinelibrary.wiley.com/store/10.1111/j.1469-1809.1936.tb02137.x/asset/j.1469-1809.1936.tb02137.x.pdf?v=1&t=h407g9i2&s=7d41a7d29aeebe716c4581a5206dc85edbe6b935}{The
+  Use of Multiple Measurements in Taxonomic Problems}}
+  \field{volume}{7}
+  \field{journaltitle}{Annals of Eugenics}
+  \field{year}{1936}
+\endentry
+
+\entry{Gallagher:1996}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Gallagher}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Visser}{V.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sepulveda}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pierson}{P.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Heymsfield}{H.}%
+     {Harris}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{G+1}
+  \strng{fullhash}{GVSPHH1}
+  \field{sortinit}{G}
+  \field{number}{3}
+  \field{pages}{228\bibrangedash 239}
+  \field{title}{\href{http://aje.oxfordjournals.org/content/143/3/228.full.pdf}{How
+  useful is body mass index for comparison of body fatness across age, sex, and
+  ethnic groups?}}
+  \field{volume}{143}
+  \field{journaltitle}{American Journal of Epidemiology}
+  \field{year}{1996}
+\endentry
+
+\entry{Garbutt:2012}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Garbutt}{G.}%
+     {J.M.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Banister}{B.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Spitznagel}{S.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Piccirillo}{P.}%
+     {J.F.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Medical Association}%
+  }
+  \strng{namehash}{GJ+1}
+  \strng{fullhash}{GJBCSEPJ1}
+  \field{sortinit}{G}
+  \field{number}{7}
+  \field{pages}{685\bibrangedash 692}
+  \field{title}{\href{http://jama.jamanetwork.com/article.aspx?articleid=1104985}{Amoxicillin
+  for Acute Rhinosinusitis: A Randomized Controlled Trial}}
+  \field{volume}{307}
+  \field{journaltitle}{JAMA: The Journal of the American Medical Association}
+  \field{year}{2012}
+\endentry
+
+\entry{Graham:2010}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Graham}{G.}%
+     {D.J.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ouellet-Hellstrom}{O.-H.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {MaCurdy}{M.}%
+     {T.E.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ali}{A.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sholley}{S.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Worrall}{W.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kelman}{K.}%
+     {J.A.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Am Med Assoc}%
+  }
+  \strng{namehash}{GD+1}
+  \strng{fullhash}{GDOHRMTAFSCWCKJ1}
+  \field{sortinit}{G}
+  \field{issn}{0098-7484}
+  \field{number}{4}
+  \field{pages}{411}
+  \field{title}{Risk of acute myocardial infarction, stroke, heart failure, and
+  death in elderly Medicare patients treated with rosiglitazone or
+  pioglitazone}
+  \field{volume}{304}
+  \field{journaltitle}{JAMA}
+  \field{year}{2010}
+\endentry
+
+\entry{Graybill:1994}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Graybill}{G.}%
+     {F.A.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Iyer}{I.}%
+     {H.K.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Duxbury Press}%
+  }
+  \strng{namehash}{GFIH1}
+  \strng{fullhash}{GFIH1}
+  \field{sortinit}{G}
+  \field{pages}{511\bibrangedash 516}
+  \field{title}{Regression Analysis: Concepts and Applications}
+  \field{year}{1994}
+\endentry
+
+\entry{Hand:1994}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hand}{H.}%
+     {D.J.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Chapman \& Hall/CRC}%
+  }
+  \strng{namehash}{HD1}
+  \strng{fullhash}{HD1}
+  \field{sortinit}{H}
+  \field{title}{{A handbook of small data sets}}
+  \field{year}{1994}
+\endentry
+
+\entry{Heinz:2003}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Heinz}{H.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Peterson}{P.}%
+     {L.J.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johnson}{J.}%
+     {R.W.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kerk}{K.}%
+     {C.J.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HG+1}
+  \strng{fullhash}{HGPLJRKC1}
+  \field{sortinit}{H}
+  \field{number}{2}
+  \field{title}{\href{http://www.amstat.org/publications/jse/v11n2/datasets.heinz.html}{Exploring
+  relationships in body dimensions}}
+  \field{volume}{11}
+  \field{journaltitle}{Journal of Statistics Education}
+  \field{year}{2003}
+\endentry
+
+\entry{Johnson+Murray:2010}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Johnson}{J.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Murray}{M.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JSMD1}
+  \strng{fullhash}{JSMD1}
+  \field{sortinit}{J}
+  \field{booktitle}{Transportation Research Board 89th Annual Meeting}
+  \field{title}{\href{http://comp.uark.edu/~sjohnson/New\%20Folder/SLJ\%20Pub\%20Paper\%2010-0833.pdf}{Empirical
+  Analysis of Truck and Automobile Speeds on Rural Interstates: Impact of
+  Posted Speed Limits}}
+  \field{year}{2010}
+\endentry
+
+\entry{Lockman:2007}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Lockman}{L.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shapiro}{S.}%
+     {R.L.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smeaton}{S.}%
+     {L.M.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wester}{W.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thior}{T.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stevens}{S.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chand}{C.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Makhema}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moffat}{M.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Asmelash}{A.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LS+1}
+  \strng{fullhash}{LSSRSLWCTISLCFMJMCAA+1}
+  \field{sortinit}{L}
+  \field{number}{6}
+  \field{pages}{361}
+  \field{title}{\href{http://www.nejm.org/doi/pdf/10.1056/NEJMoa062876}{Response
+  to antiretroviral therapy after a single, peripartum dose of nevirapine}}
+  \field{volume}{62}
+  \field{journaltitle}{Obstetrical \& gynecological survey}
+  \field{year}{2007}
+\endentry
+
+\entry{Lucas:2011}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Lucas}{L.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mirzaei}{M.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pan}{P.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Okereke}{O.}%
+     {O.I.}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Willett}{W.}%
+     {W.C.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O'Reilly}{O.}%
+     {E.J.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koenen}{K.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ascherio}{A.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Am Med Assoc}%
+  }
+  \strng{namehash}{LM+1}
+  \strng{fullhash}{LMMFPAOOWWOEKKAA1}
+  \field{sortinit}{L}
+  \field{number}{17}
+  \field{pages}{1571}
+  \field{title}{\href{http://archinte.jamanetwork.com/data/Journals/INTEMED/22528/ioi15048_1571_1578.pdf}{Coffee,
+  caffeine, and risk of depression among women}}
+  \field{volume}{171}
+  \field{journaltitle}{Archives of internal medicine}
+  \field{year}{2011}
+\endentry
+
+\entry{Malkevitc+Lesser:2008}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Malkevitch}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lesser}{L.}%
+     {L.M.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {WH Freeman \& Co}%
+  }
+  \strng{namehash}{MJLL1}
+  \strng{fullhash}{MJLL1}
+  \field{sortinit}{M}
+  \field{title}{{For All Practical Purposes: Mathematical Literacy in Today's
+  World}}
+  \field{year}{2008}
+\endentry
+
+\entry{McDowan:2003}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {McGowan}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MJ1}
+  \strng{fullhash}{MJ1}
+  \field{sortinit}{M}
+  \field{title}{{Health Education: Does the Buteyko Institute Method make a
+  difference?}}
+  \field{volume}{58}
+  \field{journaltitle}{Thorax}
+  \field{year}{2003}
+\endentry
+
+\entry{Nieman:2009}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Nieman}{N.}%
+     {D.C.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cayea}{C.}%
+     {E.J.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Austin}{A.}%
+     {M.D.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Henson}{H.}%
+     {D.A.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McAnulty}{M.}%
+     {S.R.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jin}{J.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{ND+1}
+  \strng{fullhash}{NDCEAMHDMSJF1}
+  \field{sortinit}{N}
+  \field{number}{6}
+  \field{pages}{414\bibrangedash 418}
+  \field{title}{\href{http://www.sciencedirect.com/science/article/pii/S027153170900089X}{Chia
+  seed does not promote weight loss or alter disease risk factors in overweight
+  adults}}
+  \field{volume}{29}
+  \field{journaltitle}{Nutrition Research}
+  \field{year}{2009}
+\endentry
+
+\entry{news:coffeeDepression}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {O'Connor}{O.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OA1}
+  \strng{fullhash}{OA1}
+  \field{sortinit}{O}
+  \field{title}{\href{http://well.blogs.nytimes.com/2011/09/26/coffee-drinking-linked-to-less-depression-in-women}{Coffee
+  Drinking Linked to Less Depression in Women}}
+  \field{journaltitle}{New York Times}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Oldham:2011}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Oldham-Cooper}{O.-C.}%
+     {R.E.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hardman}{H.}%
+     {C.A.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nicoll}{N.}%
+     {C.E.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rogers}{R.}%
+     {P.J.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brunstrom}{B.}%
+     {J.M.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Am Soc Nutrition}%
+  }
+  \strng{namehash}{OCR+1}
+  \strng{fullhash}{OCRHCNCRPBJ1}
+  \field{sortinit}{O}
+  \field{number}{2}
+  \field{pages}{308}
+  \field{title}{\href{http://www.ajcn.org/content/93/2/308.full.pdf}{Playing a
+  computer game during lunch affects fullness, memory for lunch, and later
+  snack intake}}
+  \field{volume}{93}
+  \field{journaltitle}{The American Journal of Clinical Nutrition}
+  \field{year}{2011}
+\endentry
+
+\entry{Orr:2009}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Orr}{O.}%
+     {E.S.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sisic}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ross}{R.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Simmering}{S.}%
+     {M.G.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Arseneault}{A.}%
+     {J.M.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Orr}{O.}%
+     {R.R.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Mary Ann Liebert, Inc.}%
+  }
+  \strng{namehash}{OE+1}
+  \strng{fullhash}{OESMRCSMAJOR1}
+  \field{sortinit}{O}
+  \field{number}{3}
+  \field{pages}{337\bibrangedash 340}
+  \field{title}{\href{http://online.liebertpub.com/doi/abs/10.1089/cpb.2008.0214}{The
+  influence of shyness on the use of Facebook in an undergraduate sample}}
+  \field{volume}{12}
+  \field{journaltitle}{CyberPsychology \& Behavior}
+  \field{year}{2009}
+\endentry
+
+\entry{news:bullySleep}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Parker-Pope}{P.-P.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PPT1}
+  \strng{fullhash}{PPT1}
+  \field{sortinit}{P}
+  \field{title}{\href{http://well.blogs.nytimes.com/2011/06/02/the-school-bully-is-sleepy}{The
+  School Bully Is Sleepy}}
+  \field{journaltitle}{New York Times}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Piff:2012}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Piff}{P.}%
+     {P.K.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stancato}{S.}%
+     {D.M.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {C{\^o}t{\'e}}{C.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mendoza-Denton}{M.-D.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Keltner}{K.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {National Acad Sciences}%
+  }
+  \strng{namehash}{PP+1}
+  \strng{fullhash}{PPSDCSMDRKD1}
+  \field{sortinit}{P}
+  \field{title}{\href{https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxwYXVscGlmZnxneDoxNzNmMTIwNDk5MTJiMzlj}{Higher
+  social class predicts increased unethical behavior}}
+  \field{journaltitle}{Proceedings of the National Academy of Sciences}
+  \field{year}{2012}
+\endentry
+
+\entry{news:smokingDementia}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rabin}{R.}%
+     {R.C.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RR1}
+  \strng{fullhash}{RR1}
+  \field{sortinit}{R}
+  \field{title}{\href{http://www.nytimes.com/2010/11/02/health/research/02risks.html}{Risks:
+  Smokers Found More Prone to Dementia}}
+  \field{journaltitle}{New York Times}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{news:prenatalVitAutism}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rabin}{R.}%
+     {R.C.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RR1}
+  \strng{fullhash}{RR1}
+  \field{sortinit}{R}
+  \field{title}{\href{http://www.nytimes.com/2011/06/14/health/research/14patterns.html?_r=1&ref=research}{Patterns:
+  Prenatal Vitamins May Ward Off Autism}}
+  \field{journaltitle}{New York Times}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Ritz+Yu+Chapa+Fruin:2000}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Ritz}{R.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yu}{Y.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chapa}{C.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fruin}{F.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RB+1}
+  \strng{fullhash}{RBYFCGFS1}
+  \field{sortinit}{R}
+  \field{number}{5}
+  \field{pages}{502\bibrangedash 511}
+  \field{title}{\href{http://journals.lww.com/epidem/Abstract/2000/09000/Effect_of_Air_Pollution_on_Preterm_Birth_Among.4.aspx}{Effect
+  of air pollution on preterm birth among children born in Southern California
+  between 1989 and 1993}}
+  \field{volume}{11}
+  \field{journaltitle}{Epidemiology}
+  \field{year}{2000}
+\endentry
+
+\entry{Romero:2008}{article}{}
+  \name{author}{10}{}{%
+    {{}%
+     {Romero-Corral}{R.-C.}%
+     {A}{A}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Somers}{S.}%
+     {VK}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sierra-Johnson}{S.-J.}%
+     {J}{J}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thomas}{T.}%
+     {RJ}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collazo\-Clavell}{C.-C.}%
+     {ML}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Korinek}{K.}%
+     {J}{J}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Allison}{A.}%
+     {TG}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Batsis}{B.}%
+     {JA}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sert-Kuniyoshi}{S.-K.}%
+     {FH}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lopez-Jimenez}{L.-J.}%
+     {F}{F}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Nature Publishing Group}%
+  }
+  \strng{namehash}{RCA+1}
+  \strng{fullhash}{RCASVSJJTRCCMKJATBJSKFLJF1}
+  \field{sortinit}{R}
+  \field{number}{6}
+  \field{pages}{959\bibrangedash 966}
+  \field{title}{\href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2877506/pdf/nihms152315.pdf}{Accuracy
+  of body mass index in diagnosing obesity in the adult general population}}
+  \field{volume}{32}
+  \field{journaltitle}{International Journal of Obesity}
+  \field{year}{2008}
+\endentry
+
+\entry{Scanlon:1993}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Scanlon}{S.}%
+     {T.J.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Luben}{L.}%
+     {R.N.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scanlon}{S.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {F.L.}{F.}%
+     {N.}{N.}%
+     {}{}%
+     {Singleton}{S.}}%
+  }
+  \strng{namehash}{ST+1}
+  \strng{fullhash}{STLRSFSN1}
+  \field{sortinit}{S}
+  \field{pages}{1584\bibrangedash 1586}
+  \field{title}{\href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1697765/pdf/bmj00052-0013.pdf}{Is
+  Friday the 13th Bad For Your Health?}}
+  \field{volume}{307}
+  \field{journaltitle}{BMJ}
+  \field{year}{1993}
+\endentry
+
+\entry{Schmidt:2011}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Schmidt}{S.}%
+     {R.J.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hansen}{H.}%
+     {R.L.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hartiala}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Allayee}{A.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schmidt}{S.}%
+     {L.C.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tancredi}{T.}%
+     {D.J.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tassone}{T.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hertz-Picciotto}{H.-P.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SR+1}
+  \strng{fullhash}{SRHRHJAHSLTDTFHPI1}
+  \field{sortinit}{S}
+  \field{number}{4}
+  \field{pages}{476}
+  \field{title}{\href{http://www.ncbi.nlm.nih.gov/pubmed/21610500}{Prenatal
+  vitamins, one-carbon metabolism gene variants, and risk for autism}}
+  \field{volume}{22}
+  \field{journaltitle}{Epidemiology}
+  \field{year}{2011}
+\endentry
+
+\entry{Turnbull+Brown+Hu:1974}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Turnbull}{T.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brown}{B.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hu}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TB+1}
+  \strng{fullhash}{TBBBHM1}
+  \field{sortinit}{T}
+  \field{pages}{74\bibrangedash 80}
+  \field{title}{\href{http://www.jstor.org/discover/10.2307/2285502?uid=3739256&uid=2129&uid=2&uid=70&uid=4&sid=47699108222567}{Survivorship
+  of Heart Transplant Data}}
+  \field{volume}{69}
+  \field{journaltitle}{Journal of the American Statistical Association}
+  \field{year}{1974}
+\endentry
+
+\entry{news:youngAmericans1}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Vaughn}{V.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VA1}
+  \strng{fullhash}{VA1}
+  \field{sortinit}{V}
+  \field{title}{\href{http://articles.latimes.com/2011/nov/03/nation/la-na-young-adults-20111103}{Poll
+  finds young adults optimistic, but not about money}}
+  \field{journaltitle}{Los Angeles Times}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{data:quine}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Venables}{V.}%
+     {W.~N.}{W.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ripley}{R.}%
+     {B.~D.}{B.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{VWNRBD1}
+  \strng{fullhash}{VWNRBD1}
+  \field{sortinit}{V}
+  \field{edition}{Fourth Edition}
+  \field{note}{\href{http://www.stats.ox.ac.uk/pub/MASS4}{Data can also be
+  found in the R MASS package}}
+  \field{title}{Modern Applied Statistics with S}
+  \list{location}{1}{%
+    {New York}%
+  }
+  \field{year}{2002}
+\endentry
+
+\entry{ggplot2}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wickham}{W.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer New York}%
+  }
+  \strng{namehash}{WH1}
+  \strng{fullhash}{WH1}
+  \field{sortinit}{W}
+  \field{title}{\href{http://had.co.nz/ggplot2/book}{ggplot2: elegant graphics
+  for data analysis}}
+  \field{year}{2009}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

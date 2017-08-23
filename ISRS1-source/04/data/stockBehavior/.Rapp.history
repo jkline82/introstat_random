@@ -1,0 +1,1819 @@
+load("/Volumes/REVOLUTION/stockBehavior/stockBehavior.RData")
+d$R
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+library(openintro)
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))#
+#
+R <- sample(R)#
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+histPlot(s-0.01, add=TRUE, breaks=seq(0, 18, 0.5), col='#22558833')
+load("stockBehavior.RData")
+load("stockBehavior.RData")
+load("stockBehavior.RData")
+load("stockBehavior.RData")
+sHold
+table(as.character(sHold))
+?table
+table(as.character(sHold))
+table(as.character(sHold))
+table(as.character(sHold))
+dim(table(as.character(sHold)))
+as.matrix(table(as.character(sHold)))
+as.matrix(table(as.character(sHold)))[c(1,6:14,2:5),]
+as.matrix(table(as.character(sHold)))[c(1,6:13,2:5),]
+c(counts[1:12], 0, counts[13])
+counts <- as.matrix(table(as.character(sHold)))[c(1,6:13,2:5),]
+ c(counts[1:12], 0, counts[13])
+names(counts)[13] <- 13
+counts
+counts <- as.matrix(table(as.character(sHold)))[c(1,6:13,2:5),]#
+#
+counts <- c(counts[1:12], 0, counts[13])#
+names(counts)[13:14] <- 13:14
+counts
+counts <- c(counts[1:9], sum(counts[10:14]))#
+counts
+counts <- as.matrix(table(as.character(sHold)))[c(1,6:13,2:5),]#
+#
+counts <- c(counts[1:12], 0, counts[13])#
+counts <- c(counts[1:9], sum(counts[10:13]))#
+names(counts)[10] <- "10+"#
+counts
+any(d$R == 0)
+sum(d$R == 0)
+s <- c()#
+si <- TRUE#
+k  <- 1#
+n  <- 0#
+for(i in 2:length(R)){#
+	if((R[i] == 0)){#
+		#
+	} else if((R[i] > 0) != si){#
+		n  <- n+1#
+		s[n] <- k#
+		k  <- 1#
+		si <- !si#
+	} else {#
+		k <- k+1#
+	}#
+}#
+#
+sHold <- s
+#
+histPlot(sHold-0.51, ylim=c(0, 3000), breaks=seq(0, 15, 0.5))
+sHold
+R
+R <- d$R
+R
+rev(d$R[,1])
+R <- rev(d$R[,1])
+signs <- (R > 0)#
+si <- signs#
+streaks <- 0#
+k <- 1#
+n <- 0
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[,1])#
+#
+signs <- (R <= 0)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}
+hist(streaks)
+histPlot(streaks-0.51, breaks=seq(0, 15, 0.5))
+histPlot(streaks-0.51, breaks=seq(0, 13, 0.5))
+histPlot(streaks-0.01, breaks=seq(0, 13, 0.5))
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))
+table(as.character(streaks))
+sum(streaks > 1)
+sum(streaks == 1)
+sum(signs)/length(signs)
+4514/(3524+4514)
+length(R)
+R <- rev(d$R[1:10000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))
+table(as.character(streaks))
+as.matrix(table(as.character(streaks)))[c(1,4:12,2:4),]
+as.matrix(table(as.character(streaks)))[c(1,5:12,2:4),]
+counts <- as.matrix(table(as.character(streaks)))[c(1,5:12,2:4),]
+chisq.test
+chisq.test(counts)
+counts
+p <- sum(!signs)/length(signs)
+(1-p)^(0:8)*p
+R
+R[1]
+R <- rev(d$R[1:5000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))
+table(as.character(streaks))
+order(as.numeric(names(counts)))
+counts <- as.matrix(table(as.character(streaks)))
+order(as.numeric(names(counts)))
+names(counts)
+table(as.character(streaks))
+names(table(as.character(streaks)))
+order(as.numeric(names(counts)))
+as.numeric(names(counts))
+names(counts)
+counts <- table(as.character(streaks))#
+order(as.numeric(names(counts)))
+counts <- table(as.character(streaks))
+matrix(counts)[order(as.numeric(names(counts))),]
+matrix(counts)
+table(as.character(streaks))
+matrix(counts)
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))
+Names
+Order
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names
+counts
+as.numeric(Names)
+frac   <- (1-p)^(0:6)*p
+frac
+frac   <- (1-p)^(0:5)*p
+frac
+sum(frac)
+1-sum(frac)
+c(frac, 1-sum(frac))
+props <- c(frac, 1-sum(frac))
+props
+5000*props
+sum(counts)*props
+sum(counts)*props - counts
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+sum(counts)*props - counts
+counts[7] <- sum(counts[7:8])
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))
+sum(counts)*props - counts
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names#
+#
+counts[7] <- sum(counts[7:8])#
+counts[8] <- NULL#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+#
+sum(counts)*props - counts
+length(counts)
+counts[8]
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+#
+sum(counts)*props - counts
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+diffs^2/expCounts
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+diffs^2/expCounts
+sum(diffs^2/expCounts)
+pchisq(17.08, 6)
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[1:5000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names#
+#
+counts[7] <- sum(counts[7:8])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+sum(diffs^2/expCounts)
+pchisq(X2, length(diffs)-1)
+X2 <- sum(diffs^2/expCounts)#
+pchisq(X2, length(diffs)-1)
+1-pchisq(X2, length(diffs)-1)
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[1:5000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names#
+#
+counts[7] <- sum(counts[7:8])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[1:5000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[1:15000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+X2
+diffs
+counts
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[1:15000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names[Order]#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+counts
+expCounts
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+R <- rev(d$R[1:5000,1])#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names[Order]#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+R[1]
+R <- rev(d$R[1:5000,1])
+rev(d$R[1:5000,1])
+rev(d$R[100:5000,1])
+rev(d$R[160:5000,1])
+rev(d$R[144:5000,1])
+rev(d$R[140:5000,1])
+rev(d$R[141:5000,1])
+rev(d$R[139:5000,1])
+(R <- rev(d$R[139:5000,1]))
+(R <- rev(d$R[139:5139,1]))
+(R <- rev(d$R[139:5139,1]))[1]
+(R <- rev(d$R[139:5239,1]))[1]
+(R <- rev(d$R[139:5189,1]))[1]
+(R <- rev(d$R[139:5175,1]))[1]
+(R <- rev(d$R[139:5182,1]))[1]
+(R <- rev(d$R[139:5182,1]))[1:5]
+(R <- rev(d$R[139:5181,1]))[1:5]
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+(R <- rev(d$R[139:5181,1]))#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names[Order]#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+counts <- counts[1:7]#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+expCounts <- sum(counts)*props#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+(R <- rev(d$R[139:5181,1]))#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))#
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names[Order]#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+(counts <- counts[1:7])#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))#
+#
+(expCounts <- sum(counts)*props)#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+load("stockBehavior.RData")#
+#
+# we want to analyze how many days it takes#
+# before we observe "up" days#
+#
+(R <- rev(d$R[139:5181,1]))#
+#
+signs <- (R <= 0)#
+p <- sum(!signs)/length(signs)#
+si <- signs#
+streaks <- 0#
+k <- 0#
+n <- 0#
+for(i in 1:length(R)){#
+	if(signs[i]){#
+		n  <- n+1#
+	} else {#
+		k <- k+1#
+		n <- n+1#
+		streaks[k] <- n#
+		n <- 0#
+	}#
+}#
+histPlot(streaks, breaks=seq(0.25, 13.25, 0.5))#
+#
+counts <- table(as.character(streaks))
+counts
+Names  <- names(counts)#
+Order  <- order(as.numeric(names(counts)))#
+counts <- matrix(counts)[Order,]#
+names(counts) <- Names[Order]#
+#
+counts[7] <- sum(counts[7:length(counts)])#
+(counts <- counts[1:7])#
+frac   <- (1-p)^(0:5)*p#
+props <- c(frac, 1-sum(frac))
+#
+(expCounts <- sum(counts)*props)#
+diffs <- counts - expCounts#
+X2 <- sum(diffs^2/expCounts)#
+1-pchisq(X2, length(diffs)-1)
+diffs
+(diffs^2/expCounts)
+counts
+sum(counts)

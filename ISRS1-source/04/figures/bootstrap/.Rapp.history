@@ -1,0 +1,520 @@
+library(openintro)#
+data(COL)#
+data(textbooks)
+textbooks
+head(textbooks)
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(2.3, 0.5, 0), mar=c(3.4, 3.2, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE#
+         xlab="Lecture", col = COL[1])#
+axis(1)#
+dev.off()
+histPlot(textbooks$diff, axes = FALSE#
+         xlab="Lecture", col = COL[1])
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="Lecture", col = COL[1])
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(2.3, 0.5, 0), mar=c(3.4, 3.2, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="Lecture", col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(2.3, 0.5, 0), mar=c(3.4, 3.2, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="Lecture", ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(2.3, 0.5, 0), mar=c(3.4 0.5, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="Lecture", ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(2.3, 0.5, 0), mar=c(3.4, 0.5, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="Lecture", ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(2.3, 0.5, 0), mar=c(3.4, 0.5, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3.4, 0.5, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 0.5, 0.5, 0.5))#
+histPlot(textbooks$diff, axes = FALSE,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 3.5, 0.5, 0.5))#
+histPlot(textbooks$diff,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 3.5, 0.5, 0.5))#
+histPlot(textbooks$diff,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)
+x
+hist(x)
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(x, breaks = 15, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+qqnorm(x)
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2.5, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 3.5, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "Density",#
+         col = COL[1])#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 3.5, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+mtext("Density", 2, 2.4)#
+axis(1)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3, mgp=c(1.7, 0.5, 0), mar=c(3, 3.5, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 2.4)#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf",#
+      5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 3.5, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 2.4)#
+axis(1)#
+dev.off()
+library(openintro)#
+data(COL)#
+data(textbooks)#
+set.seed(1)#
+myPDF("textbook_histogram_for_bootstrap_section.pdf",#
+      5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 2, 0.5, 0.5))#
+histPlot(textbooks$diff, breaks = 15,#
+         xlab="UCLA price - Amazon price, by book (USD)",#
+         ylab = "",#
+         col = COL[1])#
+axis(1)#
+dev.off()#
+#
+Boot <- function(x, N = 10000, FUN = sd) {#
+  M <- matrix(sample(x, length(x) * N, TRUE), nrow = N)#
+  return(apply(M, 1, FUN))#
+}#
+#
+x <- Boot(textbooks$diff)#
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+dev.off()
+s <- sd(textbooks$diff)
+s
+s <- sd(textbooks$diff)
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 3, col = COL[4,3])#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 3, col = COL[4,1])#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 3, col = COL[4,1], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 3, col = COL[2,1], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 3, col = rgb(1,1,1), lwd = 3)#
+abline(v = s, lty = 3, col = COL[2,4], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 2, col = rgb(1,1,1), lwd = 3)#
+abline(v = s, lty = 2, col = COL[2,4], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 2, col = rgb(1,1,1), lwd = 4)#
+abline(v = s, lty = 2, col = COL[2,4], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 2, col = rgb(1,1,1), lwd = 4)#
+abline(v = s, lty = 2, col = COL[2,3], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+abline(v = s, lty = 2, col = rgb(1,1,1), lwd = 3)#
+abline(v = s, lty = 2, col = COL[2,3], lwd = 3)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 50, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+dev.off()
+myPDF("textbook_sd_dist.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+histPlot(x, breaks = 30, probability = TRUE,#
+         xlab="Standard Deviations of Bootstrap Samples",#
+         ylab = "",#
+         col = COL[1])#
+par(las = 0)#
+mtext("Density", 2, 3)#
+axis(1)#
+dev.off()
+qqplot(x, breaks = 30, probability = TRUE,#
+       # xlab="Standard Deviations of Bootstrap Samples",#
+       # ylab = "",#
+       col = COL[1,3], pch = 3)
+qqplot(x,#
+       # xlab="Standard Deviations of Bootstrap Samples",#
+       # ylab = "",#
+       col = COL[1,3], pch = 3)
+qqnorm(x,#
+       # xlab="Standard Deviations of Bootstrap Samples",#
+       # ylab = "",#
+       col = COL[1,3], pch = 3)
+qqnorm(x,#
+       # xlab="Standard Deviations of Bootstrap Samples",#
+       # ylab = "",#
+       col = COL[1,3], pch = 19)
+myPDF("textbook_sd_qqnorm.pdf", 5.5, 3.3,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+qqnorm(x,#
+       ylab="Values From Bootstrap Distribution",#
+       col = COL[1,3], pch = 19)#
+dev.off()
+myPDF("textbook_sd_qqnorm.pdf", 5.5, 5.5,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+qqnorm(x, main = "",#
+       ylab="Values From Bootstrap Distribution",#
+       col = COL[1,3], pch = 19)#
+dev.off()
+myPDF("textbook_sd_qqnorm.pdf", 7, 5.5,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+qqnorm(x, main = "",#
+       ylab="Values From Bootstrap Distribution",#
+       col = COL[1,3], pch = 19)#
+dev.off()
+myPDF("textbook_sd_qqnorm.pdf", 7, 5.5,#
+      mgp=c(1.7, 0.5, 0), mar=c(3, 4.1, 0.5, 0.5))#
+qqnorm(x, main = "",#
+       ylab="Values From Bootstrap Distribution",#
+       col = COL[1,4], pch = 20)#
+dev.off()

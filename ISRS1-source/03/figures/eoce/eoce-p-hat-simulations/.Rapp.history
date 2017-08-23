@@ -1,0 +1,732 @@
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 5, width = 8,#
+      mfrow = c(2, 2), mar = c(3, 0.5, 1, 0.5))#
+#
+PHatPlot(0.1, 10, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 5, xlim = c(0, 0.5))#
+#
+dev.off()#
+#
+##
+pdf("egyptSoln.pdf", height = 3, width = 6)#
+#
+par(mar=c(4,4,0,0), las=1, mgp=c(2.5,1,0), mfrow = c(1,1), cex.axis = 1.25, cex.lab = 1.25)#
+#
+histPlot(pHat, breaks=(11:(2*M)+0.75)/2/n, xlab=expression(hat(p)[sim]*"    "), col=COL[7], ylab="", axes=FALSE)#
+axis(1)#
+axis(2, at=(0:3)*N/20, labels=c("0","0.05","0.10","0.15"))#
+abline(h = 0)#
+#
+histPlot(pHat[pHat <= 0.57], breaks=(-1:(2*M)+0.75)/2/n, col=COL[1], add=TRUE)#
+#
+lines(rep(0.57, 2), c(0, 3)*N/22, lty=3, lwd=1.7)#
+text(0.57, 3*N/22, "0.57", pos=3, cex=1.25)#
+#
+sum(pHat <= 0.57)/10^4#
+#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 5, width = 8,#
+      mfrow = c(2, 2), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 10, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.5))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 5, width = 8,#
+      mfrow = c(2, 2), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 10, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.5))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 5, width = 10,#
+      mfrow = c(2, 2), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 10, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.5))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 5, width = 10,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.5))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 8, width = 4,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.5))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 8, width = 8,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.5))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.5))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.5))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 8, width = 8,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.4))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.4))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.4))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 8, width = 8,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.4))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.4))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.4))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 8, width = 8,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 3, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 1, xlim = c(0, 0.34))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 8, width = 8,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations.pdf", height = 7, width = 8,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf", height = 5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf", height = 5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = 1 - c(0, 0.34))#
+PHatPlot(0.95, 100, lwd = 5, xlim = 1 - c(0, 0.34))#
+PHatPlot(0.95, 500, lwd = 2, xlim = 1 - c(0, 0.34))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = 1 - c(0, 0.34))#
+PHatPlot(0.95, 100, lwd = 5, xlim = 1 - c(0, 0.34))#
+PHatPlot(0.95, 500, lwd = 2, xlim = 1 - c(0, 0.34))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = c(0.7, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.7, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.7, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = c(0.8, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.8, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.8, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = c(0.95, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = c(0.75, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 1000]#
+  y <- y[y > max(y) / 1000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = c(0.75, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1, 25, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95, 25, lwd = 7, xlim = c(0.75, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p5.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.5,  20, lwd = 7, xlim = c(0.3, 0.7))#
+PHatPlot(0.5, 100, lwd = 5, xlim = c(0.3, 0.7))#
+PHatPlot(0.5, 500, lwd = 2, xlim = c(0.3, 0.7))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1,  20, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95,  20, lwd = 7, xlim = c(0.75, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p5.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.5,  20, lwd = 7, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 100, lwd = 5, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 500, lwd = 2, xlim = c(0.1, 0.9))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1,  20, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95,  20, lwd = 7, xlim = c(0.75, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p5.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.5,  20, lwd = 7, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 100, lwd = 4, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 500, lwd = 1, xlim = c(0.1, 0.9))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1,  20, lwd = 7, xlim = c(0, 0.34))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.34))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.34))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95,  20, lwd = 7, xlim = c(0.75, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.75, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.75, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p5.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.5,  20, lwd = 7, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 100, lwd = 4, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 500, lwd = 1, xlim = c(0.1, 0.9))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1,  20, lwd = 7, xlim = c(0, 0.4))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.4))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.4))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = 4.5, width = 6,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95,  20, lwd = 7, xlim = c(0.7, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.7, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.7, 1))#
+dev.off()
+.5 / sqrt(20)
+library(openintro)#
+data(COL)#
+set.seed(5)#
+#
+height <- 4#
+width  <- 6#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p5.pdf",#
+      height = height, width = width,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.5,  20, lwd = 7, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 100, lwd = 4, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 500, lwd = 1, xlim = c(0.1, 0.9))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = height, width = width,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1,  20, lwd = 7, xlim = c(0, 0.4))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.4))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.4))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = height, width = width,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95,  20, lwd = 7, xlim = c(0.7, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.7, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.7, 1))#
+dev.off()
+library(openintro)#
+data(COL)#
+set.seed(5)#
+#
+height <- 4#
+width  <- 6#
+PHatPlot <- function(p, n, lwd = 3, type = "ignored",#
+    axes = "ignored", xlab = "", ylab = "", ...) {#
+  x <- seq(0, n)#
+  y <- dbinom(x, n, p)#
+  plot(x / n, y, type = "n", axes = FALSE,#
+       xlab = xlab, ylab = ylab, ...)#
+  x <- x[y > max(y) / 2000]#
+  y <- y[y > max(y) / 2000]#
+  segments(x / n, 0, x / n, y, col = COL[1], lwd = lwd)#
+  abline(h = 0)#
+  axis(1)#
+}#
+#
+myPDF("eoce-p-hat-simulations-p5.pdf",#
+      height = height, width = width,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.5,  20, lwd = 7, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 100, lwd = 4, xlim = c(0.1, 0.9))#
+PHatPlot(0.5, 500, lwd = 1, xlim = c(0.1, 0.9))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p1.pdf",#
+      height = height, width = width,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.1,  20, lwd = 7, xlim = c(0, 0.4))#
+PHatPlot(0.1, 100, lwd = 5, xlim = c(0, 0.4))#
+PHatPlot(0.1, 500, lwd = 2, xlim = c(0, 0.4))#
+dev.off()#
+#
+myPDF("eoce-p-hat-simulations-p95.pdf",#
+      height = height, width = width,#
+      mfrow = c(3, 1), mar = c(3, 0.5, 1, 0.5))#
+PHatPlot(0.95,  20, lwd = 7, xlim = c(0.7, 1))#
+PHatPlot(0.95, 100, lwd = 5, xlim = c(0.7, 1))#
+PHatPlot(0.95, 500, lwd = 2, xlim = c(0.7, 1))#
+dev.off()

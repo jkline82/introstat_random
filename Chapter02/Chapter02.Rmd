@@ -25,6 +25,7 @@ citation {
       - wburr, Aug 21, 2017
 -->
 
+<!-- This is Chapter 2.1 in the text, slides by Mine Cetinkaya-Rundel -->
 # Case Study: Gender Discrimination
 
 ## Gender Discrimination
@@ -133,7 +134,7 @@ knitr::include_graphics("fig/fig_2_1_trial.png")
 * In a hypothesis test, the burden of proof is on the unusual claim.
 *  The null hypothesis is the ordinary state of affairs (the status quo), so it's the alternative hypothesis that we consider unusual and for which we must gather evidence.
 
-## Recap: Null Hypothesis Significance Testing (NHST)
+## Recap: Hypothesis Testing 
 * We start with a **null hypothesis** ($H_0$) that represents the status quo.
 * We also have an **alternative hypothesis** ($H_A$) that represents our research question, i.e. what we're testing for.
 * We conduct a hypothesis test under the assumption that the null hypothesis is true, either via simulation (today) or theoretical methods (later in the course).
@@ -201,7 +202,238 @@ knitr::include_graphics("fig/fig_2_1_results.png")
 *Where is our original result (from the J.Applied Psychology paper) on this graph?*
 </div>
 
-<!-- This is Chapter 2.6 from the text -->
+<!--------------------------------------------------------------------------
+
+   The material from here to the start of Chapter 2.6 added by Wesley Burr,
+   CC-BY license, same as original slides by Mine.
+   
+-->
+
+# Case Study: Opportunity Cost
+
+## Context
+We are interested in whether university student consumers always consider an obvious fact: money not spent now can be spent later. In particular, we are interested in whether reminding students of this fact about money causes them to be thriftier. 
+
+We can summarize the two perspectives as:
+
+* $H_0$: (null hypothesis) Reminding students that they can save money for later purchases will not have any impact on students' spending decisions, versus
+* $H_A$: (alternative hypothesis) Reminding students that they can save money for later purchases **will** reduce the chance that they continue with a purchase. 
+
+<span id="footnote">Frederick S., Novemsky, N., Wang, J., Dhar, J. and Nowlis, S. 2009. Opportunity Cost Neglect. Journal of Consumer Research 36: 553-561. </span>
+
+## The Setup
+
+150 students were recruited for the student, and each was given the following statement:<br />
+
+<blockquote>
+Imagine that you have been saving some extra money on the side to make some
+purchases, and on your most recent visit to the video store you come across a
+special sale on a new video. This video is one with your favorite actor or actress,
+and your favorite type of movie (such as a comedy, drama, thriller, etc.). This
+particular video that you are considering is one you have been thinking about
+buying for a long time. It is available for a special sale price of $14.99.
+
+What would you do in this situation? Please circle one of the options below.
+</blockquote>
+
+## The Experimental Design
+
+Half of the 150 students were randomized into a control group, and given the following two options:
+
+1. Buy this entertaining video <br />
+2. Not buy this entertaining video
+
+The remaining 75 (50%) students were placed in the treatment group, and they saw a slightly modified version (2):
+
+1. Buy this entertaining video. <br />
+2. Not buy this entertaining video. Keep the $14.99 for other purchases.
+
+Would the extra statement reminding students of an obvious fact impact the purchasing decision?
+
+## The Study Results
+
+```{r, makeOutcomeTable2_2, echo = FALSE}
+library("kableExtra")
+library("knitr")
+options(knitr.table.format = "html") 
+dt <- data.frame("buy" = c(56, 41, 97), "not buy" = c(19, 34, 53), "Total" = c(75, 75, 150))
+row.names(dt) <- c("Control", "Treatment", "")
+kable(dt, align = 'ccc') %>%
+  kable_styling("striped", full_width = FALSE, position = "center", font_size = 20) %>%
+  add_header_above(c(" " = 1, "decision" = 2, " " = 1)) %>%
+  group_rows("Group", 1, 2) %>%
+  group_rows("Total", 3, 3)
+```
+
+## Row Proportions
+
+Instead of comparing absolute numbers (15 fewer people choose to buy the DVD in the Treatment group versus the Control group), we can change the results to be **row proportions**:
+
+```{r, makeOutcomeTable2_2b, echo = FALSE}
+library("kableExtra")
+library("knitr")
+options(knitr.table.format = "html") 
+dt <- data.frame("buy" = c(0.747, 0.547, 0.647), "not buy" = c(0.253, 0.453, 0.353), "Total" = c(1.00, 1.00, 1.00))
+row.names(dt) <- c("Control", "Treatment", "")
+kable(dt, align = 'ccc') %>%
+  kable_styling("striped", full_width = FALSE, position = "center", font_size = 20) %>%
+  add_header_above(c(" " = 1, "decision" = 2, " " = 1)) %>%
+  group_rows("Group", 1, 2) %>%
+  group_rows("Total", 3, 3)
+```
+In this case, we have converted each row into a proportion, so that the sum of the decisions adds to $1.00$. 
+
+## Success versus Failure
+
+We will define a **success** (of the experiment, meaning the intervention, or treatment, worked) as being a student who chooses not to buy a DVD. Then, the value of interest is the change in DVD purchase rates that results by reminding students that not spending money now means they can spend the money later.
+
+We construct a **point estimate** for this difference now:
+
+$$
+\hat{p}_{\text{trmt}} - \hat{p}_\text{ctrl} = \frac{34}{75} - \frac{19}{75} = 0.453 - 0.252 = 0.200.
+$$
+
+Thus, the proportion of students who chose not to buy the DVD was 20% higher in the treatment group than in the control group. Is this result **statistically significant**? 
+
+## Chance and Simulation
+
+* If the null hypothesis ($H_0$) was true, and the treatment had no effect, then the observed difference between the two groups could be attributed entirely to chance
+* If the alternative hypothesis ($H_A$) was true, then the difference indicates that reminding students about saving for later purchases impacts their buying decision.
+
+How can we simulate this experiment under the scenario that there is no effect from the treatment?
+
+## Simulation
+
+Start with 150 index cards, representing students.
+
+* Label 53 with "no buy" to represent the 53/150 students who did not choose to buy the DVD
+* Label 97 with "buy" to represent the 97/150 who did choose to buy the DVD
+* Shuffle the cards
+* Sort out 75 into one pile, 75 into another, representing Control and Treatment.
+
+Then any difference between the proportions of the two piles of cards can be attributed entirely to chance. 
+
+## Simulation
+<div style="font-size:22px;">
+```{r, echo = FALSE}
+index_cards <- c( rep("Buy", 97), rep("NoBuy", 53))
+control <- sample(x = index_cards, size = 75, replace = FALSE)
+print(control)
+prop_control <- c(length(which(control == "Buy")), 75 - length(which(control == "Buy")))
+```
+
+So our simulation has:
+
+* Control Group (above): `r prop_control[2]` (`r round(prop_control[2]/75, digits = 3)`) "NoBuy"
+* Treatment Group (not shown, use process of elimination), `r 53 -prop_control[2]` (`r round(prop_control[2]/75, digits = 3)`) "NoBuy"
+
+This gives a difference of `r round((53-prop_control[2])/75 - prop_control[2]/75, digits = 3)`.
+</div>
+
+## Simulation (continued)
+
+<div style="font-size:20px;">
+But this is just one experiment! Random chance means one event means nothing -- people often win the lottery, after all, even though there's a chance of only 1 in a million or worse. **Let's do it again!**
+
+```{r, echo = FALSE}
+control <- sample(x = index_cards, size = 75, replace = FALSE)
+print(control)
+prop_control <- c(length(which(control == "Buy")), 75 - length(which(control == "Buy")))
+```
+
+* Control Group (above): `r prop_control[2]` (`r round(prop_control[2]/75, digits = 3)`) "NoBuy"
+* Treatment Group (not shown, use process of elimination), `r 53 -prop_control[2]` (`r round(prop_control[2]/75, digits = 3)`) "NoBuy"
+
+This gives a difference of `r round((53-prop_control[2])/75 - prop_control[2]/75, digits = 3)`.
+</div>
+
+## Simulation (continued)
+
+<div style="font-size:22px;">
+We could do this again, and again, and again. Doing it by hand seems incredibly tedious, but computers don't care about the work.
+
+```{r, echo = FALSE}
+experiments <- vector(length = 1000)
+for(j in 1:1000) {
+  control <- sample(x = index_cards, size = 75, replace = FALSE)
+  experiments[j] <- c(length(which(control == "Buy")), 75 - length(which(control == "Buy")))[2]
+  experiments[j] <- round( (53-experiments[j])/75 - experiments[j]/75, digits = 3)
+}
+print(experiments)
+```
+</div>
+
+## Stacked Dot Plot
+
+The previous slide had numbers flowing off the screen. There's a better way to show this!
+
+<!-- code from OpportunityCost.R, from ISRS1-source -->
+
+<div style="position:relative; float:left; left:90px; top:-20px;">
+```{r, echo = FALSE, out.width = "750px"}
+DotPlotRegularized <- function(x,
+                               width = 5,
+                               col = "#569BBD",
+                               cex = 1, ...) {
+  x    <- sort(x)
+  xu   <- unique(x)
+  xlim <- range(x)
+  X    <- table(x)
+  height <- max(X) / width
+  plot(0, 0, xlim = xlim, ylim = c(0, height),
+       type = "n", axes = FALSE, ...)
+  axis(1)
+  
+  spread <- min(diff(xu)) / width / 2
+  for (i in seq_along(X)) {
+    val     <- xu[i]
+    num     <- X[i]
+    num.rep <- round(num / width) + 1
+    pos     <- rep(1:width, num.rep)
+    rel.pos <- (pos[1:num] - width / 2) * spread
+    ver.pos <- rep(1:num.rep, rep(width, num.rep))
+    ver.pos <- ver.pos[1:num]
+    points(val + rel.pos, ver.pos, pch = ".",
+           col = col, cex = cex)
+  }
+  abline(h = 0)
+}
+DotPlotRegularized(experiments, xlab = "Simulated Difference in Proportions", ylab = "", cex = 2)
+lines(rep(0.2, 2), c(0, 5), lty = 2, col = "#569BBD")
+text(0.2, 5, "observed\ndifference", pos=3)
+```
+</div>
+
+## Histogram
+
+When we have this many results, we can use **histograms** as a more convenient representation of the data or results.
+
+<div style="float:left; position:relative; top:-20px; left:100px;">
+```{r, echo = FALSE}
+hist(experiments, freq = TRUE, xlab = "Simulated Difference in Proportions", ylab = "Proportion of simulated scenarios", main = "", breaks = seq(-0.4, 0.4, 0.02), yaxt = 'n')
+axis(2, at = seq(0, 200, 20), labels = format(seq(0, 200, 20) / 1000))
+lines(c(0.2, 0.2), c(0, 30), lty = 3, lwd = 3)
+text(0.2, 30, "observed\ndifference", pos=3)
+```
+</div>
+
+## Conclusion
+
+So, if there was no treatment effect, we'd only observe a difference of 0.200 or larger about 1-in-100 times. This is really rare!
+
+So, instead, we will conclude that the data provide strong evidence there is a treatment effect: reminding students before a purchase that they could instead spend the money later on something else does reduce their chance of continuing with the purchase. 
+
+Science!
+
+# Hypothesis Testing
+
+# Simulation Case Studies: One Proportion
+
+# The Central Limit Theorem
+
+
+
+<!-- This is Chapter 2.6 from the text, Slides by Mine Cetinkaya-Rundel -->
 # Normal Distribution
 
 ## Obtaining Good Samples
