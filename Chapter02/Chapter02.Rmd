@@ -25,4 +25,56 @@ citation {
       - wburr, Aug 21, 2017
 -->
 
-# Foundation for Inference
+# Case Study: Gender Discrimination
+
+## Gender Discrimination
+
+* In 1972, as a part of a study on gender discrimination, 48 male bank supervisors were each given the same personnel file and asked to judge whether the person should be promoted to a branch manager job that was described as “routine”.
+* The files were identical except that half of the supervisors had files showing the person was male while the other half had files showing the person was female.
+* It was randomly determined which supervisors got “male” applications and which got “female” applications.
+* Of the 48 files reviewed, 35 were promoted.
+* The study is testing whether females are unfairly discriminated against.
+* Is this an observational study or an experiment?
+
+
+<span id="footnote">B.Rosen and T. Jerdee (1974), "Influence of sex role stereotypes on personnel decisions", J.Applied Psychology, 59:9-14.</span>
+
+## Data
+
+At a first glance, does there appear to be a relationship between promotion and gender?
+
+```{r, makeOutcomeTable1_1, echo = FALSE}
+library("kableExtra")
+library("knitr")
+options(knitr.table.format = "html") 
+dt <- data.frame("Yes" = c(21, 14, 35), "No" = c(3, 10, 13), "Total" = c(24, 24, 48))
+row.names(dt) <- c("Male", "Female", "")
+kable(dt, align = 'ccc') %>%
+  kable_styling("striped", full_width = FALSE, position = "center", font_size = 20) %>%
+  add_header_above(c(" " = 1, "Promoted" = 2, " " = 1)) %>%
+  group_rows("Gender", 1, 2) %>%
+  group_rows("Total", 3, 3)
+```
+
+**% of males promoted**: $21 / 24 = 0.875$
+
+**% of females promoted**: $ 14 / 24 = 0.583$
+
+## Practice
+
+We saw a difference of almost 30% (29.2% to be exact) between the proportion of male and female files that are promoted. Based on this information, which of the below is true?
+
+1. If we were to repeat the experiment we will definitely see that more female files get promoted. This was a fluke.
+2. Promotion is dependent on gender, males are more likely to be promoted, and hence there is gender discrimination against women in promotion decisions.
+3. The difference in the proportions of promoted male and female files is due to chance, this is not evidence of gender discrimination against women in promotion decisions.
+4. Women are less qualified than men, and this is why fewer females get promoted.
+
+## Practice
+
+We saw a difference of almost 30% (29.2% to be exact) between the proportion of male and female files that are promoted. Based on this information, which of the below is true?
+
+1. If we were to repeat the experiment we will definitely see that more female files get promoted. This was a fluke.
+2. Promotion is dependent on gender, males are more likely to be promoted, and hence there is gender discrimination against women in promotion decisions.
+3. The difference in the proportions of promoted male and female files is due to chance, this is not evidence of gender discrimination against women in promotion decisions.
+4. Women are less qualified than men, and this is why fewer females get promoted.
+
