@@ -44,7 +44,7 @@ citation {
 
 At a first glance, does there appear to be a relationship between promotion and gender?
 
-```{r, makeOutcomeTable1_1, echo = FALSE}
+```{r, makeOutcomeTable2_1, echo = FALSE}
 library("kableExtra")
 library("knitr")
 options(knitr.table.format = "html") 
@@ -469,7 +469,7 @@ The specific *p*-values for the two case studies we've examined are:
 * Gender Study: $p \approx 0.02$
 * DVD Study: $p \approx 0.007$
 
-Later on this semester we'll discuss some alternative approaches to computing these *p*-values.
+Later on this course we'll discuss some alternative approaches to computing these *p*-values.
 
 ## Decision Errors
 
@@ -537,8 +537,162 @@ If we wanted to reduce the Type 1 error rate in the court system, what would thi
 
 What would this do to the Type 2 error rate?
 
+## Choosing Significance Levels
+
+In our discussion of *p*-values, we mentioned **significance levels**, and that a traditional value used is $\alpha = 0.05$. 
+
+* If making a Type 1 error is dangerous, or especially costly, we should choose a very small significance level
+* If, on the other hand, making a Type 2 error is more costly, we should choose a correspondingly larger significance value
+
+In the case of our court system, we err on the side of lowering Type 1: better to allow criminals to walk free of their crimes than to send innocent people to prison for crimes they did not commit. 
+
+What do you think we should do for medical diagnoses: are lower Type 1 or Type 2 errors better?
+
+## Two-Sided Hypotheses
+
+In our two case studies, we actually ignored possibilities in our alternative hypotheses:
+
+* for the gender study, we only asked if **women** were being discriminated against. What if **men** were actually discriminated against?
+* for the DVD study, we only asked if the reminder caused students to spend **less**. What if the reminder actually encouraged them to spend **more**?
+
+We actually performed **one-sided hypothesis tests** in these two studies, since we only allowed the alternative to be on one side of the distribution.
+
+## Two-Sided Hypotheses
+
+There are two dangers if we restrict ourselves to one direction, ignoring possibilities that disagree with our data or our worldview:
+
+1. If we frame an alternative hypothesis to match the direction of the data, we generally inflate the Type 1 error. 
+2. If we only use alternative hypotheses that agree with our worldview, then we are subjecting ourselves to **confirmation bias**: seeing what we expect! This isn't scientific, and we can do better!
+
+## A Two-Sided Example
+
+CPR is a procedure used on individuals suffering a heart attack when other emergency procedures are unavailable. While this can sometimes help people by providing some blood circulation, done properly it also can cause internal injuries (cracked ribs, etc.). Internal bleeding can cause issues once patients receive care, because a common treatment for clots causing heart attacks is administration of blood thinners.
+
+In this study, we will consider an experiment with patients who underwent CPR for a heart attack, and subsequently were admitted to a hospital, where they were randomly assigned to either receive a blood thinner (treatment group) or not (control group). The outcome variable was 24-hour survival: did the patient live for 24 hours after admission?
+
+<span id="footnote">Böttiger et al. "Efficacy and safety of of thrombolytic therapy after initially unsuccessful cardiopulmonary resuscitation: a prospective clinical trial." The Lancet, 2001: 357(9268), 1583-1585.</span>
+
+## CPR Study
+We want to understand whether blood thinners are harmful or helpful. 
+
+$H_0$: blood thinners do not have an overall survival effect, i.e., the survival proportions are the same in each group. $p_t - p_c = 0$. 
+
+$H_A$: blood thinners have an impact on survival, either positive or negative, but not zero. $p_t - p_c \neq 0$. 
+
+## CPR Study: Data
+
+There were 50 patients in the experiment who did not receive a blood thinner (control), and 40 patients who did (treatment). 
+
+```{r, makeOutcomeTable2_3, echo = FALSE}
+library("kableExtra")
+library("knitr")
+options(knitr.table.format = "html") 
+dt <- data.frame("Survived" = c(11, 14, 25), "Died" = c(39, 26, 65), "Total" = c(50, 40, 90))
+row.names(dt) <- c("Control", "Treatment", "")
+kable(dt, align = 'ccc') %>%
+  kable_styling("striped", full_width = FALSE, position = "center", font_size = 20) %>%
+  group_rows("Group", 1, 2) %>%
+  group_rows("Total", 3, 3)
+```
+
+## Observed Data
+
+What are $\hat{p}_c$ and $\hat{p}_t$?
+
+* Control: $\hat{p}_c = 11/50 =$
+* Treatment: $\hat{p}_t = 14/40 =$
+
+Then the point estimate of the difference in survival proportions for the two groups is:
+
+* Difference: $\hat{p}_t - \hat{p}_c =$
+
+## Simulate!
+
+As in our previous studies, we will simulate what type of differences we might see from chance alone. The population is 25 survivals, 65 deaths, and 90 total patients. 
+
+* randomly assign each patient to control/treatment
+* obtain groupings of 50 control patients, 40 treatment patients
+* compute $\hat{p}_t - \hat{p}_c$
+
+## First Result
+
+Let a value of 1 be a survival, and a 0 be a death. Then:
+
+```{r}
+patients <- c( rep(1, 11), rep(0, 39), rep(1, 14), rep(0, 26) )
+experiment <- sample(x = patients, size = 40)
+pt <- sum(experiment) / 40     # Add up the '1' cases. These are treatment survivals.
+pc <- (25 - sum(experiment))/50   # How many '1' cases are left over? These are controls.
+pt - pc
+```
+
+## Simulate More
+
+```{r}
+set.seed(1)
+results <- vector(length = 100000)
+for(j in 1:100000) {
+  experiment <- sample(x = patients, size = 40)
+  results[j] <- sum(experiment) / 40 - (25 - sum(experiment))/50
+}
+print(results)
+```
+
+## Plot the Results
+<center>
+```{r, echo = FALSE}
+hist(results, freq = TRUE, xlab = "Simulated Difference in Proportions", ylab = "Proportion of simulated scenarios", main = "", breaks = seq(-0.44, 0.44, 0.04), yaxt = 'n')
+axis(2, at = seq(0, 20000, 1000), labels = format(seq(0, 20000, 1000) / 100000))
+lines(c(0.13, 0.13), c(0, 10000), lty = 3, lwd = 3)
+text(0.18, 10000, "observed\ndifference", pos=3)
+```
+</center>
+
+Then, of the 100,000 simulated experiments, `r length(which(results >= 0.1299))` of them (`r length(which(results >= 0.1299))/100000`) gave differences greater-than-or-equal-to the data difference of 0.13.
+
+## *p*-value
+
+The right tail area (the area from the data difference of 0.13 to the far right) is about 0.132. 
+
+* Note that this has nothing to do with the data difference being 0.13: just a coincidence!
+* But our alternative hypothesis was not one-sided
+* So our actual *p*-value is twice this: 0.13154 $\times$ 2 = 0.263.
+
+For any two-sided test, take the one-sided *p*-value you get from the test statistic's position, and double it. 
+
+## Conclusion
+
+Since our *p*-value was 0.263 (which is quite large), we do **not** have evidence at the 0.05 level to reject the null hypothesis: that is, we do not find statistically significant evidence that the blood thinner administration has any influence on the survival of patients who undergo CPR prior to arriving at the hospital.
+
+## Hypothesis Test Summary
+
+How do we use a hypothesis test in science?
+
+* **Frame the research question**: determine if your research question can be framed as two competing hypotheses, with the null the skeptical view, and the alternative the new/different view.
+* **Collect data**: either use an observational study or an experiment, and gather data
+* **Analyze the data**: choose an analysis technique appropriate to the data, and identify the *p*-value
+* **Form a conclusion**: using the *p*-value, determine whether the data provide statistically significant evidence against the null hypothesis
+
+The rest of the course will largely be concerned with elements of (2) and (3) above: more sophisticated and complicated approaches to dealing with different scientific problems via hypothesis testing.
+
+<!-- Chapter 2.4 from text, slides by Wesley Burr 
+  Just including the second study, which introduces a new simulation technique. Also, repeated
+  definitions (formally) of parameters and point-nulls. -->
+  
 # Simulation Case Studies: One Proportion
 
+## Some Definitions
+
+We've mentioned this earlier in the notes, but here we formally define the object used in hypothesis tests.
+
+A **parameter** for a hypothesis test is the "true" (underlying, universal, population) value of interest. We typically estimate a parameter using a point estimate via a **test statistic** from data. 
+
+**Example**: in the CPR study from the last section, we were interested in the probability, $p$, of a patient's survival after being administered blood thinners. 
+
+We typically will denote parameters as Roman letters (e.g., $p$, $q$, $S$) and the point estimates as "hat" versions of the same (e.g., $\hat{p}$, $\hat{q}$, $\hat{S}$).
+
+
+<!-- Chapter 2.5 from text, slides by Wesley Burr -->
 # The Central Limit Theorem
 
 
