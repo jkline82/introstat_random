@@ -57,9 +57,9 @@ kable(dt, align = 'ccc') %>%
   group_rows("Total", 3, 3)
 ```
 
-**% of males promoted**: $21 / 24 = 0.875$
+**% of males promoted**: 21 / 24 = 0.875
 
-**% of females promoted**: $ 14 / 24 = 0.583$
+**% of females promoted**: 14 / 24 = 0.583
 
 ## Practice
 
@@ -80,6 +80,8 @@ We saw a difference of almost 30% (29.2% to be exact) between the proportion of 
 4. Women are less qualified than men, and this is why fewer females get promoted.
 
 ## Two Competing Claims
+
+<div style="font-size:22px;">
 “There is nothing going on.” (**Null Hypothesis**)
 
 Promotion and gender are **independent**.
@@ -99,6 +101,7 @@ Promotion and gender are **dependent**.
 There is gender discrimination.
 
 Observed difference in proportions is not due to chance.
+</div>
 
 ## Hypothesis Tests as a Trial
 <span style="font-size:22px;">
@@ -182,7 +185,6 @@ Do the results of the simulation you just ran provide convincing evidence of gen
 1. No, the data do not provide convincing evidence for the alternative hypothesis, therefore we can't reject the null hypothesis of independence between gender and promotion decisions. The observed difference between the two proportions was due to chance.
 2. Yes, the data provide convincing evidence for the alternative hypothesis of gender discrimination against women in promotion decisions. The observed difference between the two proportions was due to a real effect of gender.
 
-
 ## Practice
 Do the results of the simulation you just ran provide convincing evidence of gender discrimination against women, i.e. dependence between gender and promotion decisions?
 
@@ -201,6 +203,12 @@ knitr::include_graphics("fig/fig_2_1_results.png")
 
 *Where is our original result (from the J.Applied Psychology paper) on this graph?*
 </div>
+
+## Final statement
+
+Given the simulations, we would expect to see a result as extreme as, or more extreme than, the data of 0.292 approximately 2-in-100 times. Reasonably rare!
+
+Thus, we reject the null hypothesis, and conclude that there is evidence supporting gender discrimination against women in promotion decisions.
 
 <!--------------------------------------------------------------------------
 
@@ -353,6 +361,7 @@ This gives a difference of `r round((53-prop_control[2])/75 - prop_control[2]/75
 We could do this again, and again, and again. Doing it by hand seems incredibly tedious, but computers don't care about the work.
 
 ```{r, echo = FALSE}
+set.seed(57)
 experiments <- vector(length = 1000)
 for(j in 1:1000) {
   control <- sample(x = index_cards, size = 75, replace = FALSE)
@@ -419,13 +428,114 @@ text(0.2, 30, "observed\ndifference", pos=3)
 
 ## Conclusion
 
-So, if there was no treatment effect, we'd only observe a difference of 0.200 or larger about 1-in-100 times. This is really rare!
+So, if there was no treatment effect, we'd only observe a difference of 0.200 or larger less than 1-in-100 times. This is really rare!
 
-So, instead, we will conclude that the data provide strong evidence there is a treatment effect: reminding students before a purchase that they could instead spend the money later on something else does reduce their chance of continuing with the purchase. 
+So, instead, we will conclude that the data provide strong evidence there is a treatment effect: reminding students before a purchase that they could instead spend the money later on something else **does** reduce their chance of continuing with the purchase. 
 
 Science!
 
+**Note**: for this iteration of the simulation, we'd observe a difference of 0.200 or larger `r length(which(experiments >= 0.200))`-in-1000 times.
+
 # Hypothesis Testing
+
+## Hypothesis Tests
+In the last two case studies, we have utilized **hypothesis tests**, a formal technique for evaluating two competing possibilities. Each scenario had:
+
+* A **null hypothesis**, representing skepticism and "no difference"
+* An **alternative hypothesis**, representing the possibility that there has been a change, or that there is a treatment effect
+
+Note that the alternative hypothesis does not have to be a single quantity, but can be a **range** of quantities; the null hypothesis, on the other hand, is usually a single quantity or number.
+
+## *p*-values
+
+In the two case studies we examined, we concluded both with a statement giving how often we would expect to see a result like the one given, entirely by chance (2-in-100 for the gender study, 7-in-1000 for the DVD study). This chance is known as a ***p*-value**.
+
+**Formally**: the ***p*-value** is the probability of observing data at least as favourable to the alternative hypothesis as our current data set, if the null hypothesis were true. 
+
+We typically use a summary statistic of the data (like the difference in proportions for the DVD study) to help compute the p-value and evaluate the hypotheses.
+
+## Statistical Significance
+
+When the *p*-value is smaller than a pre-set threshhold, denoted $\alpha$, we say that the results are **statistically significant**. 
+
+* the threshold $\alpha$ is known as the **significance level**
+* when the results are statistically significant, the data provide strong evidence against the null hypothesis
+* a common level of $\alpha$ is 0.05
+
+## Case Study *p*-values
+
+The specific *p*-values for the two case studies we've examined are:
+
+* Gender Study: $p \approx 0.02$
+* DVD Study: $p \approx 0.007$
+
+Later on this semester we'll discuss some alternative approaches to computing these *p*-values.
+
+## Decision Errors
+
+We've all read about court cases where a defendent is found guilty, goes to prison, and is later exhonerated (especially through the introduction of DNA evidence). How does this happen?
+
+**Remember**: cases aren't decided on the basis of perfect information. A judge or jury decide guilt or innocence based on the principle of *reasonable doubt*. (Also, the courts and prosecutorial services are flawed: they're staffed with humans, after all!)
+
+So, just like court cases can have errors in their decisions, statistical hypothesis tests can have errors as well.
+
+## Decision Errors (continued)
+
+There are two competing statements in a hypothesis test: the null and the alternative. As the result of a test, we make a decision about which one might be true. There are then four possible cases:
+
+* Null is true, we fail to reject the null (Good)
+* Null is true, we reject the null (Bad)
+* Alternative is true, we fail to reject the null (Bad)
+* Alternative is true, we reject the null (Good)
+
+## Decision Errors (continued)
+
+<center>
+```{r, echo=FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_2_3_decision_table.png")
+```
+</center>
+
+<br />
+
+* Type 1 Error (sometimes listed as Type I): null true, reject anyway. Also known as a **false positive**. 
+* Type 2 Error (sometimes listed as Type II): alternative true, fail to reject null. Also known as a **false negative**.
+
+(the positive/negative wording refers to "deciding for the alternative": a positive result decides in favour of the alternative, and a negative result decides that there is no such alternative)
+
+## Decision Errors (continued)
+
+The two types of errors can be a bit tricky to remember. Here's a nice memory aide.
+
+<div style= "float:left;position: relative; top:-20px; left:175px;">
+```{r, echo=FALSE, out.width = "500px"}
+knitr::include_graphics("fig/fig_2_3_pregnant.jpg")
+```
+</div>
+
+## Practice
+
+In a court case, the defendent is either innocent ($H_0$) or guilty ($H_A$). What does a Type 1 error represent in such a case?
+
+1. Convicting an innocent person 
+2. Convicting a guilty person 
+3. Exonerating an innocent person
+4. Exonerating a guilty person
+
+## Practice
+
+In a court case, the defendent is either innocent ($H_0$) or guilty ($H_A$). What does a Type 1 error represent in such a case?
+
+1. <span id="highlight">Convicting an innocent person</span>
+2. Convicting a guilty person
+3. Exonerating an innocent person
+4. Exonerating a guilty person
+
+## Improving the Court System
+
+If we wanted to reduce the Type 1 error rate in the court system, what would this entail?
+
+What would this do to the Type 2 error rate?
 
 # Simulation Case Studies: One Proportion
 
