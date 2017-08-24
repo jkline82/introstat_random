@@ -1170,6 +1170,28 @@ Which of the following is **false**?
 3. <span id="highlight">For a normal distribution, the IQR is less than 2 x SD.</span>
 4. Z scores are helpful for determining how unusual a data point is compared to the rest of the data in the distribution.
 
+<!-- Written by Wesley Burr, based on the development of 2.7 in Diez, Barr and Cetinkaya-Rundel, but 
+using the CPR example instead of the two in the book -->
+
 # Applying the Normal Model
+
+## Revisiting the CPR Example
+
+Recall the CPR example. 
+
+```{r, echo = FALSE}
+results <- vector(length = 100000)
+for(j in 1:100000) {
+  experiment <- sample(c("H", "T"), size = 120, replace = TRUE)
+  results[j] <- sum(experiment == "H") / 120
+}
+hist(results, freq = TRUE, xlab = "Simulated Proportions Successful", 
+     ylab = "Proportion of simulated scenarios", main = "", breaks = seq(0.25, 0.725, 0.025), yaxt = 'n')
+axis(2, at = seq(0, 50000, 1000), labels = format(seq(0, 50000, 1000) / 100000))
+```
+
+## Standard Error
+
+
 
 # Confidence Intervals
