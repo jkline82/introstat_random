@@ -772,11 +772,35 @@ Since we have a *p*-value less than $0.0001$, we have extremely strong evidence 
 
 **Note**: in a case like this, even though we have a two-tailed hypothesis test, the *p*-value is so small, and the data result so far out into one (lower) tail, that we can actually acknowledge this, and say that this data provides strong evidence that the chance that a listener will guess the correct tune is **less** than 50%.
 
-
 <!-- Chapter 2.5 from text, slides by Wesley Burr -->
 # The Central Limit Theorem
 
+## Four Case Studies
+<center>
+```{r, echo=FALSE, out.width = "750px"}
+knitr::include_graphics("fig/fig_2_5_four_case.png")
+```
+</center>
 
+## The Shape
+
+The null distributions observed so far in our case studies all share similar features:
+
+* they are roughly symmetric
+* they have a bell-shape
+
+They may not be centered at the same point, or have the same curvature to their bell-shape, but they are otherwise quite similar.
+
+## The Central Limit Theorem for Proportions
+
+If we look at a proportion (or difference in proportions), then under *certain conditions*,
+the sample proportion (or difference in proportions) will follow a **bell-shaped curve**
+called the *normal distribution*. 
+
+The conditions required are:
+
+* The observations in the sample are **independent**
+* The sample is *large enough*
 
 <!-- This is Chapter 2.6 from the text, Slides by Mine Cetinkaya-Rundel -->
 # Normal Distribution
@@ -1146,3 +1170,6 @@ Which of the following is **false**?
 3. <span id="highlight">For a normal distribution, the IQR is less than 2 x SD.</span>
 4. Z scores are helpful for determining how unusual a data point is compared to the rest of the data in the distribution.
 
+# Applying the Normal Model
+
+# Confidence Intervals
