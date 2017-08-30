@@ -797,10 +797,27 @@ If we look at a proportion (or difference in proportions), then under *certain c
 the sample proportion (or difference in proportions) will follow a **bell-shaped curve**
 called the *normal distribution*. 
 
+This property is called the **Central Limit Theorem** (or CLT for short).
+
 The conditions required are:
 
 * The observations in the sample are **independent**
 * The sample is *large enough*
+
+## Independence
+
+The first condition required for the CLT to apply is **independence**.
+
+To have observations in a sample be independent, we can either take a **random sample** from a population, **or** if we randomly divide individuals into treatment and control groups.
+
+Note how the common feature of these two possibilities is the idea of randomness. 
+
+## Large Enough Samples
+
+The second condition required for the CLT to apply is **large samples**. We need enough observations: the sample size cannot be too small.
+
+Unfortunately, what qualifies as ``small'' changes from one situation to another, and there is no general, universal rule. We will discuss guidelines for specific situations in Chapter 3 later this term.
+
 
 <!-- This is Chapter 2.6 from the text, Slides by Mine Cetinkaya-Rundel -->
 # Normal Distribution
@@ -1179,7 +1196,8 @@ using the CPR example instead of the two in the book -->
 
 Recall the CPR example. 
 
-```{r, echo = FALSE}
+<center>
+```{r, echo = FALSE, out.width = "800px"}
 results <- vector(length = 100000)
 for(j in 1:100000) {
   experiment <- sample(c("H", "T"), size = 120, replace = TRUE)
@@ -1189,9 +1207,14 @@ hist(results, freq = TRUE, xlab = "Simulated Proportions Successful",
      ylab = "Proportion of simulated scenarios", main = "", breaks = seq(0.25, 0.725, 0.025), yaxt = 'n')
 axis(2, at = seq(0, 50000, 1000), labels = format(seq(0, 50000, 1000) / 100000))
 ```
+</center>
 
 ## Standard Error
 
+Point estimates vary from sample to sample, and we quantify this variability with the **standard error**. This is equivalent to the standard deviation associated with the estimator. The way we actually determine the standard error changes based on the situation: this makes it a little complicated!
 
+However, there is one commonality in most of the situations we will examine in this course: we can use the **Central Limit Theorem** to determine the standard error.
+
+## 
 
 # Confidence Intervals
