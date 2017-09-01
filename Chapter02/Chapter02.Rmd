@@ -1282,14 +1282,14 @@ There is an additional example in 2.7.3, where this normal approximation fails! 
 
 When one or both of these fail, the normal **approximation** is not a **good** approximation, and the results won't match up! In Chapter 3 we'll talk about ways to detect this.
 
-# Confidence Intervals
+# Confidence Intervals 
 
-## Confidence Intervals
+## Confidence Intervals (CIs)
 Point estimates (like the 3-in-120 tapping-listeners who correctly identified the song) provide a single *plausible* value for a parameter.
 
 However, point estimates are almost never perfect! 
 
-A logical step is providing a *plausible range* of values for the parameter. This is called a **confidence interval**.
+A logical step is providing a *plausible range* of values for the parameter. This is called a **confidence interval** (or CI).
 
 ## Reporting
 
