@@ -1,7 +1,7 @@
 library(openintro)
 data(COL)
 
-pdf('choosingZForCI.pdf', 1.2*6.3, 1.2*3.2)
+png('choosingZForCI.png', 1.2*630, 1.2*320)
 par(mar=c(3.3,1,.5,1), mgp=c(2.1,0.6,0))
 X <- rev(seq(-4, 4, 0.025))
 Y <- dt(X, 10) # makes better visual

@@ -1340,3 +1340,39 @@ As on the last slide: we interpret confidence intervals as ...
 *We are N% confident that the population parameter is between ...*
 
 We do not try to talk about capturing the population parameter with a certain probability -- while you can think of the confidence interval as a probability, it only really quantifies how plausible it is that the parameter is in the interval. 
+
+## Confidence Intervals for Any Confidence Level
+
+If the point estimate follows the normal model with standard error SE, then a confidence interval for the population parameter is 
+<center>
+$$
+\text{point estimate} \pm z^* × \text{SE}
+$$
+</center>
+where $z^*$ corresponds to the confidence level selected.
+
+We select $z^*$ so that the area between $-z^*$ and $z^*$ in the normal model corresponds to the confidence level. 
+
+## Example of Two Confidence Levels
+
+<center>
+```{r, echo=FALSE, out.width = "850px"}
+knitr::include_graphics("fig/fig_2_8_choosingZ.png")
+```
+</center>
+
+## Finding $z^*$ using R
+
+```{r}
+c( qnorm(0.025), qnorm(0.975), qnorm(0.005), qnorm(0.995) )
+```
+
+The **qnorm()** function returns the $z^*$ that corresponds to an area to the **left** as given. 
+
+What would **qnorm(0.5)** be?
+
+## Margin of Error
+
+We often use $z^* \times \text{SE}$ in our formulae: often enough that we give it a special name.
+
+The **margin of error** is the quantity $z^* \times \text{SE}$, and is often shortened to **ME**.

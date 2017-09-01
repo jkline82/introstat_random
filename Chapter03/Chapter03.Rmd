@@ -22,7 +22,7 @@ citation {
       A large part of the HTML/CSS formatting is janky, and could be cleaned up. Feel free to issue a 
       pull request if you love HTML and CSS and want to fix this up.
       
-      - wburr, Aug 21, 2017
+      - wburr, Sept 1, 2017
 -->
 
 <!-- This is Chapter 3.1 in the text, slides by Mine Cetinkaya-Rundel -->
@@ -30,4 +30,66 @@ citation {
 
 ## Practice
 
-## 
+Two scientists want to know if a certain drug is effective against high blood pressure. The first scientist wants to give the drug to 1000 people with high blood pressure and see how many of them experience lower blood pressure levels. The second scientist wants to give the drug to 500 people with high blood pressure, and not give the drug to another 500 people with high blood pressure, and see how many in both groups experience lower blood pressure levels. Which is the better way to test this drug?
+
+1. All 1000 get the drug
+2. 500 get the drug, 500 don’t
+
+## Practice 
+
+Two scientists want to know if a certain drug is effective against high blood pressure. The first scientist wants to give the drug to 1000 people with high blood pressure and see how many of them experience lower blood pressure levels. The second scientist wants to give the drug to 500 people with high blood pressure, and not give the drug to another 500 people with high blood pressure, and see how many in both groups experience lower blood pressure levels. Which is the better way to test this drug?
+
+1. All 1000 get the drug
+2. <span id="highlight">500 get the drug, 500 don’t</span>
+
+## Comments on Transition to Ch 3
+
+Now that we're entering Chapter 3, we will be revisiting a lot of the ideas we saw in Chapters 1 and 2, but adding mathematical formality to things. 
+
+All the spots in the previous weeks where we said "we'll revisit this later" will be coming up in the next little while.
+
+## Results from the GSS
+
+The General Social Survey (GSS) collects information and keep a historical record of the concerns, experiences, attitudes, and practices of residents of the United States. Since 1972, the GSS has been monitoring societal change and studying the growing complexity of American society. Canada has been running a similar survey since 1985. 
+
+The GSS asks the question from the previous slide. Below is the distribution of responses from the 2010 survey:
+
+All 1000 get the drug                99
+---------------------                ---
+500 get the drug, 500 don't          571
+Total                                670
+
+<span id="footnote">http://www.statcan.gc.ca/pub/89f0115x/89f0115x2013001-eng.htm</span>
+
+## Parameter and Point Estimation
+
+We would like to estimate the proportion of all Americans who have good intuition about experimental design, i.e., would answer “500 get the drug, 500 don't”? What are the parameter of interest and the point estimate?
+
+## Parameter and Point Estimation
+
+We would like to estimate the proportion of all Americans who have good intuition about experimental design, i.e., would answer “500 get the drug, 500 don't”? What are the parameter of interest and the point estimate?
+
+<span id="highlight">Parameter of Interest</span>: Proportion of **all** Americans who have good intuition about experimental design
+
+**p**: a population proportion
+
+## Parameter and Point Estimation
+
+We would like to estimate the proportion of all Americans who have good intuition about experimental design, i.e., would answer “500 get the drug, 500 don't”? What are the parameter of interest and the point estimate?
+
+<span id="highlight">Parameter of Interest</span>: Proportion of **all** Americans who have good intuition about experimental design
+
+**p**: a population proportion
+
+<span id="highlight">Point Estimate</span>: proportion of **sampled** Americans who have good intuition about experimental design.
+
+**$\hat{p}$**: a sample proportion
+
+## Inference on a Proportion
+
+What percent of all Americans have good intuition about experimental design, i.e., would answer "500 get the drug
+500 don't"?
+
+<span id="highlight">We can answer this question using a confidence interval, which (from Ch. 2) we know is always of the form 
+<center>
+point estimate $\pm$ 
