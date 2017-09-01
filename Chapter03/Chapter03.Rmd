@@ -1,0 +1,33 @@
+---
+title: 'Introductory Statistics with Randomization and Simulation: Chapter 3'
+output:
+   ioslides_presentation:
+     font-family: Lato Semibold
+     font-import: http://fonts.googleapis.com/css?family=Lato
+     widescreen: yes
+     css: ../style.css
+     fig_caption: yes
+---
+<style>
+citation {
+  font-size: 4px;
+}
+</style>
+
+<!--  Version 1.0-0
+
+      This version of the slides is taken directly from Mine Çetinkaya-Rundel's lecture slides
+      posted on OpenIntro.org in .pptx and .gdslides format. Simply moved to Rmd. 
+      
+      A large part of the HTML/CSS formatting is janky, and could be cleaned up. Feel free to issue a 
+      pull request if you love HTML and CSS and want to fix this up.
+      
+      - wburr, Aug 21, 2017
+-->
+
+<!-- This is Chapter 3.1 in the text, slides by Mine Cetinkaya-Rundel -->
+# Inference for a Single Proportion
+
+## Practice
+
+## 
