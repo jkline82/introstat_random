@@ -355,7 +355,7 @@ $$
 $$
 * **HT**: calculated using the null hypothesis value, $p_0$
 $$
-\text{SE} = \sqrt{\frac{p_0(1-p_0}{n}}.
+\text{SE} = \sqrt{\frac{p_0(1-p_0)}{n}}.
 $$
 </div>
 
@@ -417,7 +417,7 @@ knitr::include_graphics("fig/fig_3_1_ztable.png")
 ```
 </center>
 
-So the *p*-value is 1-0.9994 = 0.006.
+So the *p*-value is 1-0.9994 = 0.0006.
 
 ## Practice: Conclusion
 
@@ -425,7 +425,7 @@ Since the *p*-value is low, we reject $H_0$. The data provide convincing evidenc
 
 ## Practice
 
-11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $\pm$3%. A news piece on this study's findings states: "More than 10% of all Americans have objections on religious grounds to celebrating Halloween." At 95% confidence level, is this news piece's statement justified?
+11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $\pm 3$%. A news piece on this study's findings states: "More than 10% of all Americans have objections on religious grounds to celebrating Halloween." At 95% confidence level, is this news piece's statement justified?
 
 1. Yes
 2. No
@@ -433,7 +433,7 @@ Since the *p*-value is low, we reject $H_0$. The data provide convincing evidenc
 
 ## Practice
 
-11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $\pm$3%. A news piece on this study's findings states: "More than 10% of all Americans have objections on religious grounds to celebrating Halloween." At 95% confidence level, is this news piece's statement justified?
+11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $\pm 3$%. A news piece on this study's findings states: "More than 10% of all Americans have objections on religious grounds to celebrating Halloween." At 95% confidence level, is this news piece's statement justified?
 
 1. Yes
 2. <span id="highlight">No</span>
@@ -631,9 +631,9 @@ $$
 $$
 \begin{split}
 \left( \hat{p}_\text{Duke} - \hat{p}_{USA} \right) &\pm z^* \times \sqrt{ \frac{\hat{p}_\text{Duke}(1 - \hat{p}_\text{Duke})}{n_\text{Duke}} +  \frac{\hat{p}_\text{USA}(1 - \hat{p}_\text{USA})}{n_\text{USA}}} \\
-(0.657 - 0.668) &\pm 1.96 \times \sqrt{ \frac{0.657(0.343)}{105} + \frac{0.668(0.332)}{680}} \\
--0.011 &\pm 1.96 \times 0.0497 \\
-(-0.108, 0.086).
+(0.668 - 0.657) &\pm 1.96 \times \sqrt{ \frac{0.668(0.332)}{680} + \frac{0.657(0.343)}{105} } \\
+0.011 &\pm 1.96 \times 0.0497 \\
+(-0.086, 0.108).
 \end{split}
 $$
 
@@ -744,14 +744,14 @@ $$
 $$
 \begin{split}
 Z &= \frac{\left( \hat{p}_\text{Duke} - \hat{p}_\text{USA} \right)}{\sqrt{ \frac{\hat{p}(1-\hat{p})}{n_\text{Duke}} + \frac{\hat{p}(1-\hat{p})}{n_\text{USA}} }} \\
-&= \frac{(0.657 - 0.668)}{\sqrt{ \frac{0.666\cdot 0.334}{105} + \frac{0.666 \cdot 0.334}{680}}} = \frac{-0.011}{0.0495} = -0.22. \\
-p-\text{value} &= 2 \cdot \mathbf{P}\left[ Z < -0.22 \right] = 2 \cdot 0.41 = 0.82.
+&= \frac{(0.668 - 0.657)}{\sqrt{ \frac{0.666\cdot 0.334}{105} + \frac{0.666 \cdot 0.334}{680}}} = \frac{0.011}{0.0495} = 0.22. \\
+p-\text{value} &= 2 \cdot \mathbf{P}\left[ Z > 0.22 \right] = 2 \cdot 0.413 = 0.826.
 \end{split}
 $$
 
 ## Practice (conclusion)
 
-Since our *p*-value is 0.82 (which is not small), we do not have evidence at the 95% confidence level to reject the null hypothesis. We cannot say that the proportions of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap differs in a meaningful way.
+Since our *p*-value is 0.83 (which is not small), we do not have evidence at the 95% confidence level to reject the null hypothesis. We cannot say that the proportions of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap differs in a meaningful way.
 
 ## Recap - Comparing Two Proportions
 
@@ -812,7 +812,6 @@ We haven't talked much about working with means (versus proportions), but in thi
     - if doing a hypothesis test, $p$ comes from the null hypothesis
     - if constructing a confidence interval, use $\hat{p}$ instead
     
-
 <!-- This is Chapter 3.3 in the text, slides by Mine Cetinkaya-Rundel -->
 
 # Chi-Square Test for Goodness-of-Fit

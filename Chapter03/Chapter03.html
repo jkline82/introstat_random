@@ -494,7 +494,7 @@ Use the default \(\hat{p} = 0.5\).</span></p>
 \text{SE} = \sqrt{\frac{p(1-p)}{n}}.
 \]</li>
 <li><strong>HT</strong>: calculated using the null hypothesis value, \(p_0\) \[
-\text{SE} = \sqrt{\frac{p_0(1-p_0}{n}}.
+\text{SE} = \sqrt{\frac{p_0(1-p_0)}{n}}.
 \]</li>
 </ul></div>
 
@@ -555,7 +555,7 @@ Z = \frac{0.85 - 0.80}{0.0154} &amp;= 3.25 \\
 
 </center>
 
-<p>So the <em>p</em>-value is 1-0.9994 = 0.006.</p>
+<p>So the <em>p</em>-value is 1-0.9994 = 0.0006.</p>
 
 </article></slide><slide class=''><hgroup><h2>Practice: Conclusion</h2></hgroup><article  id="practice-conclusion">
 
@@ -563,7 +563,7 @@ Z = \frac{0.85 - 0.80}{0.0154} &amp;= 3.25 \\
 
 </article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-7">
 
-<p>11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $$3%. A news piece on this study&#39;s findings states: &quot;More than 10% of all Americans have objections on religious grounds to celebrating Halloween.&quot; At 95% confidence level, is this news piece&#39;s statement justified?</p>
+<p>11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is \(\pm 3\)%. A news piece on this study&#39;s findings states: &quot;More than 10% of all Americans have objections on religious grounds to celebrating Halloween.&quot; At 95% confidence level, is this news piece&#39;s statement justified?</p>
 
 <ol>
 <li>Yes</li>
@@ -573,7 +573,7 @@ Z = \frac{0.85 - 0.80}{0.0154} &amp;= 3.25 \\
 
 </article></slide><slide class=''><hgroup><h2>Practice</h2></hgroup><article  id="practice-8">
 
-<p>11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $$3%. A news piece on this study&#39;s findings states: &quot;More than 10% of all Americans have objections on religious grounds to celebrating Halloween.&quot; At 95% confidence level, is this news piece&#39;s statement justified?</p>
+<p>11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is \(\pm 3\)%. A news piece on this study&#39;s findings states: &quot;More than 10% of all Americans have objections on religious grounds to celebrating Halloween.&quot; At 95% confidence level, is this news piece&#39;s statement justified?</p>
 
 <ol>
 <li>Yes</li>
@@ -928,9 +928,9 @@ Success/Failure</span>: At least 10 observed successes and 10 observed failures 
 <p>\[
 \begin{split}
 \left( \hat{p}_\text{Duke} - \hat{p}_{USA} \right) &amp;\pm z^* \times \sqrt{ \frac{\hat{p}_\text{Duke}(1 - \hat{p}_\text{Duke})}{n_\text{Duke}} +  \frac{\hat{p}_\text{USA}(1 - \hat{p}_\text{USA})}{n_\text{USA}}} \\
-(0.657 - 0.668) &amp;\pm 1.96 \times \sqrt{ \frac{0.657(0.343)}{105} + \frac{0.668(0.332)}{680}} \\
--0.011 &amp;\pm 1.96 \times 0.0497 \\
-(-0.108, 0.086).
+(0.668 - 0.657) &amp;\pm 1.96 \times \sqrt{ \frac{0.668(0.332)}{680} + \frac{0.657(0.343)}{105} } \\
+0.011 &amp;\pm 1.96 \times 0.0497 \\
+(-0.086, 0.108).
 \end{split}
 \]</p>
 
@@ -1124,14 +1124,14 @@ Do these data suggest that the proportion of all Duke students who would be both
 <p>\[
 \begin{split}
 Z &amp;= \frac{\left( \hat{p}_\text{Duke} - \hat{p}_\text{USA} \right)}{\sqrt{ \frac{\hat{p}(1-\hat{p})}{n_\text{Duke}} + \frac{\hat{p}(1-\hat{p})}{n_\text{USA}} }} \\
-&amp;= \frac{(0.657 - 0.668)}{\sqrt{ \frac{0.666\cdot 0.334}{105} + \frac{0.666 \cdot 0.334}{680}}} = \frac{-0.011}{0.0495} = -0.22. \\
-p-\text{value} &amp;= 2 \cdot \mathbf{P}\left[ Z &lt; -0.22 \right] = 2 \cdot 0.41 = 0.82.
+&amp;= \frac{(0.668 - 0.657)}{\sqrt{ \frac{0.666\cdot 0.334}{105} + \frac{0.666 \cdot 0.334}{680}}} = \frac{0.011}{0.0495} = 0.22. \\
+p-\text{value} &amp;= 2 \cdot \mathbf{P}\left[ Z &gt; 0.22 \right] = 2 \cdot 0.413 = 0.826.
 \end{split}
 \]</p>
 
 </article></slide><slide class=''><hgroup><h2>Practice (conclusion)</h2></hgroup><article  id="practice-conclusion-1">
 
-<p>Since our <em>p</em>-value is 0.82 (which is not small), we do not have evidence at the 95% confidence level to reject the null hypothesis. We cannot say that the proportions of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap differs in a meaningful way.</p>
+<p>Since our <em>p</em>-value is 0.83 (which is not small), we do not have evidence at the 95% confidence level to reject the null hypothesis. We cannot say that the proportions of Duke students and Americans who would be bothered a great deal by the melting of the northern ice cap differs in a meaningful way.</p>
 
 </article></slide><slide class=''><hgroup><h2>Recap - Comparing Two Proportions</h2></hgroup><article  id="recap---comparing-two-proportions">
 
@@ -2212,7 +2212,7 @@ df &amp;= (R-1) \cdot (C-1) = (3-1) \cdot (3-1) = 2 \cdot 2 = 4.
 <p>Just as in the previous examples of <em>p</em>-values, there are two easy ways to find a <em>p</em>-value for a \(\chi^2\) test:</p>
 
 <ul>
-<li>Use R</li>
+<li>Use R, or other software packages</li>
 <li>Use a table (back of the book, or internet)</li>
 </ul>
 
@@ -2228,7 +2228,7 @@ df &amp;= (R-1) \cdot (C-1) = (3-1) \cdot (3-1) = 2 \cdot 2 = 4.
 
 <p><strong>Method 1</strong>: use R</p>
 
-<pre class = 'prettyprint lang-r'>1 - pchisq(q = 1.3121, df = 4)</pre>
+<pre class = 'prettyprint lang-r'>pchisq(q = 1.3121, df = 4, lower.tail = FALSE)</pre>
 
 <pre >## [1] 0.8593193</pre>
 

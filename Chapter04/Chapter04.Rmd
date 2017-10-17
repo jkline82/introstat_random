@@ -1,0 +1,503 @@
+---
+title: 'Introductory Statistics with Randomization and Simulation: Chapter 4'
+output:
+   ioslides_presentation:
+     font-family: Lato Semibold
+     font-import: http://fonts.googleapis.com/css?family=Lato
+     widescreen: yes
+     css: ../style.css
+     fig_caption: yes
+---
+<style>
+citation {
+  font-size: 4px;
+}
+</style>
+
+<!--  Version 1.0-0
+
+      This version of the slides is taken directly from Mine Çetinkaya-Rundel's lecture slides
+      posted on OpenIntro.org in .pptx and .gdslides format. Simply moved to Rmd. 
+
+      A large part of the HTML/CSS formatting is janky, and could be cleaned up. Feel free to issue a 
+      pull request if you love HTML and CSS and want to fix this up.
+
+      - wburr, Oct 16, 2017
+-->
+
+<!-- This is Chapter 4.1 in the text, slides by Mine Cetinkaya-Rundel -->
+
+# Chapter 4.1: One-Sample Means with the $t$ Distribution
+
+## Case Study: Friday the 13th
+
+Between 1990 - 1992 researchers in the UK collected data on traffic flow, accidents, and hospital admissions on Friday 13th and the previous Friday, Friday 6th. Below is an excerpt from this data set on traffic flow. We can assume that traffic flow on a given day at locations 1 and 2 are independent.
+
+<center>
+```{r, out.width = "750px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_1_friday_13.png")
+```
+</center>
+<span id="footnote">Scanlon, T.J., Luben, R.N., Scanlon, F.L., Singleton, N. (1993), “Is Friday the 13th Bad For Your Health?” BMJ, 307, 1584-1586.</span>
+
+## Friday the 13th
+
+We want to investigate if people's behavior is different on Friday 13th compared to Friday 6th.
+One approach is to compare the traffic flow on these two days.
+
+  * $H_0$: Average traffic flow on Friday 6th and 13th are equal.
+  * $H_A$: Average traffic flow on Friday 6th and 13th are different.
+  
+Each case in the data set represents traffic flow recorded at the same location in the same month of the same year: one count from Friday 6th and the other Friday 13th. Are these two counts independent?
+
+## Friday the 13th
+
+We want to investigate if people's behavior is different on Friday 13th compared to Friday 6th.
+One approach is to compare the traffic flow on these two days.
+
+  * $H_0$: Average traffic flow on Friday 6th and 13th are equal.
+  * $H_A$: Average traffic flow on Friday 6th and 13th are different.
+  
+Each case in the data set represents traffic flow recorded at the same location in the same month of the same year: one count from Friday 6th and the other Friday 13th. Are these two counts independent?
+
+**No**
+
+## Hypotheses
+
+What are the hypotheses for testing for a difference between the average traffic flow between Friday 6th and 13th?
+
+  * $H_0: \mu_\text{6th} = \mu_\text{13th} \qquad \text{versus} H_A: \mu_\text{6th} \neq \mu_\text{13th}$
+  * $H_0: p_\text{6th} = p_\text{13th} \qquad \text{versus} H_A: p_\text{6th} \neq p_\text{13th}$
+  * $H_0: \mu_\text{diff} = 0 \qquad \text{versus} \qquad H_A: \mu_\text{diff} \neq 0$
+  * $H_0: \bar{x}_\text{diff} = 0 \qquad \text{versus} \qquad H_A: \bar{x}_\text{diff} \neq 0$
+
+## Hypotheses 
+
+What are the hypotheses for testing for a difference between the average traffic flow between Friday 6th and 13th?
+
+  * $H_0: \mu_\text{6th} = \mu_\text{13th} \qquad \text{versus} \qquad H_A: \mu_\text{6th} \neq \mu_\text{13th}$
+  * $H_0: p_\text{6th} = p_\text{13th} \qquad \text{versus} \qquad H_A: p_\text{6th} \neq p_\text{13th}$
+  * <span id="highlight">$H_0: \mu_\text{diff} = 0 \qquad \text{versus} \qquad H_A: \mu_\text{diff} \neq 0$</span>
+  * $H_0: \bar{x}_\text{diff} = 0 \qquad \text{versus} \qquad H_A: \bar{x}_\text{diff} \neq 0$
+
+## A Plot of the Data
+<center>
+```{r, out.width = "750px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_1_friday_13_plot.png")
+```
+</center>
+
+## Conditions
+
+**Independence**: we are told to assume that the cases (rows in the table) are independent
+
+**Sample size/skew**: the sample distribution, shown on the last slide, does not seem to be extremely skewed, but it's very  difficult to assess with such a small sample size. We might want to think about whether we would expect the population distribution to be skewed or not -- probably not, as it should be equally likely to have days with lower than average traffic and higher than average traffic.
+
+**Note**: $n < 30$!
+
+So what do we do when the sample size is small?
+
+## Review: Purpose of Large Sample
+As long as observations are independent, and the population distribution is not extremely skewed, a large sample would ensure that:
+
+  * the sampling distribution of the mean is nearly normal
+  * the estimate of the standard error (SE) , as $\frac{s}{\sqrt{n}}$, is reliable
+  
+## The normality condition
+The CLT, which states that sampling distributions will be nearly normal, holds true for any sample size as long as the population distribution is nearly normal.
+
+While this is a helpful special case, it's inherently difficult to verify normality in small data sets.
+
+We should exercise caution when verifying the normality condition for small samples. It is important to not only examine the data but also think about where the data come from.
+
+For example, ask: would I expect this distribution to be symmetric, and am I confident that outliers are rare?
+  
+## The $t$ Distribution
+When working with small samples, and the population standard deviation is unknown (almost always), the uncertainty of the standard error estimate is addressed by using a new distribution: the $t$ distribution.
+
+This distribution also has a bell shape, but its tails are thicker than the normal model's.
+
+Therefore observations are more likely to fall beyond two SDs from the mean than under the normal distribution.
+
+These extra thick tails are helpful for resolving our problem with a less reliable estimate the standard error (since $n$ is small)
+  
+## A plot of $t$ versus $\mathcal{N}$
+
+```{r, echo = FALSE, fig.width = 9}
+x <- seq(-4.5, 4.5, 0.001)
+plot(x, dnorm(x), type = "l", xlab = "", ylab = "", yaxt = 'n')
+lines(x, dt(x, 2), col = "blue", lty = 2)
+legend(x = "topright", col = c("black", "blue"), lty = c(1, 2), legend = c("Normal", "t"))
+```
+
+## The $t$ Distribution (ctd.)
+
+Always centered at zero, like the standard normal ($z$) distribution.
+
+Has a single parameter: degrees of freedom ($df$) -- like $\chi^2$.
+
+What happens to the shape of the $t$ distribution as $df$ increases?
+
+## The $t$ Distribution (ctd.)
+
+```{r, echo = FALSE, fig.width = 10}
+x <- seq(-4.5, 4.5, 0.001)
+plot(x, dnorm(x), type = "l", xlab = "", ylab = "", yaxt = 'n')
+lines(x, dt(x, 5), col = "grey60", lty = 1)
+lines(x, dt(x, 10), col = "grey60", lty = 1)
+lines(x, dt(x, 15), col = "grey60", lty = 1)
+lines(x, dt(x, 20), col = "grey60", lty = 1)
+lines(x, dt(x, 25), col = "grey60", lty = 1)
+```
+As $df \longrightarrow \infty$, the $t$ distribution approaches the normal!
+
+## Asymptotic
+
+What $df$ is required to give arbitrary decimal agreement between the $t$ and $z$ curves?
+
+* 2 decimals: $df = 14$
+* 3 decimals: $df = 136$
+* 4 decimals: $df = 1370$
+
+What do we usually ask for? 30 $df$ corresponds to 3 decimals for the $[-3, 3]$ domain, which is good enough. So once $df > 30$, just use a $z$ instead.
+
+## Back to Friday the 13th
+<center>
+```{r, out.width = "750px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_1_friday_13.png")
+```
+</center>
+
+We have, from this table:
+
+* $\bar{x}_\text{diff} = 1836$
+* $s_\text{diff} = 1176$
+* $n=10$
+
+## Finding the test statistic
+
+The test statistic for inference on a small-sample mean ($n<50$) is the $t$ statistic with $df = n-1$.
+
+$$
+t_\text{df} = \frac{\text{point estimate} - \text{null value}}{SE}
+$$
+In this context, these become:
+
+* Point Estimate: $\bar{x}_\text{diff} = 1836$
+* SE: $SE = \frac{s_\text{diff}}{\sqrt{n}} = \frac{1176}{\sqrt{10}} = 371.88$
+* $t$: $t = \frac{1836 - 0}{371.88} = 4.937$
+* $df$: $df = 10- 1 = 9$
+
+**Note**: the null value is $0$ here because the null hypothesis we set at the start of the lecture is $\mu_\text{diff} = 0$.
+
+## Finding the *p*-value
+
+The *p*-value of this test statistic is, again, the tail area under the null (*t*) distribution.
+
+```{r}
+2 * pt(4.937, df = 9, lower.tail = FALSE)
+```
+
+Since this *p*-value is smaller than an arbitrary $\alpha = 0.05$, we would conclude at a 95% level of significance that our mean difference is **not** 0. Thus, the data provide convincing evidence of a difference between traffic flow on Friday the 6th and Friday the 13th. 
+
+## A graphical display
+
+```{r, echo = FALSE}
+x <- seq(-5, 5, 0.01)
+plot(x, dt(x, 9), type = "l", xlab = "", ylab = "", yaxt = 'n', xaxt = 'n')
+axis(side = 1, at = c(-4.937, 0, 4.937))
+abline(h = 0)
+abline(v = c(-4.937, 4.937), col = "blue")
+```
+
+## What is the difference?
+We concluded that there is a difference in the traffic flow between Friday 6th and 13th.
+
+But it would be more interesting to find out what exactly this difference is.
+
+We can use a confidence interval to estimate this difference.
+
+## Confidence intervals for a small-sample mean
+
+Confidence intervals are always of the form
+$$
+   \text{point estimate} \pm \text{ME}
+$$
+
+ME is always calculated as the product of a critical value (remember: $z^*$) and SE.
+
+Since small-sample means follow a $t$ distribution (and not a $z$ distribution), the critical value is a $t^*$
+(as opposed to a $z^*$).
+
+$$
+ \text{point estimate} \pm t^* \times \text{SE}
+$$
+
+## Finding the critical $t^*$
+
+Since $n=10$, we have $df = 10 - 1 = 9$. 
+
+```{r}
+qt(0.025, df = 9)
+qt(0.975, df = 9)
+```
+
+## Practice
+
+Which of the following is the correct calculation of a 95% confidence interval for the difference between the traffic flow between Friday 6th and 13th?
+
+$\bar{x}_\text{diff} = 1836$, $s_\text{diff} = 1176$ and $n = 10$, with $SE = 371.88$.
+
+  * $1836 \pm 1.96 \times 372$
+  * $1836 \pm 2.26 \times 372$
+  * $1836 \pm 2.26 \times 1176$
+  
+## Practice
+
+Which of the following is the correct calculation of a 95% confidence interval for the difference between the traffic flow between Friday 6th and 13th?
+
+$\bar{x}_\text{diff} = 1836$, $s_\text{diff} = 1176$ and $n = 10$, with $SE = 371.88$.
+
+  * $1836 \pm 1.96 \times 372$
+  * <span id="highlight">$1836 \pm 2.26 \times 372 \longrightarrow (995, 2677)$</span>
+  * $1836 \pm 2.26 \times 1176$
+  
+## Interpreting the CI
+
+Which of the following is the best interpretation for the confidence interval we just calculated?
+$$
+\mu_\text{diff: 6th - 13th} = (995, 2677)
+$$
+
+We are 95% confident that ...
+
+* the difference between the average number of cars on the road on Friday 6th and 13th is between 995 and 2,677.
+* on Friday 6th there are 995 to 2,677 fewer cars on the road than on the Friday 13th, on average.
+* on Friday 6th there are 995 fewer to 2,677 more cars on the road than on the Friday 13th, on average.
+* on Friday 13th there are 995 to 2,677 fewer cars on the road than on the Friday 6th, on average.
+  
+## Interpreting the CI
+
+Which of the following is the best interpretation for the confidence interval we just calculated?
+$$
+\mu_\text{diff: 6th - 13th} = (995, 2677)
+$$
+
+We are 95% confident that ...
+
+* the difference between the average number of cars on the road on Friday 6th and 13th is between 995 and 2,677.
+* on Friday 6th there are 995 to 2,677 fewer cars on the road than on the Friday 13th, on average.
+* on Friday 6th there are 995 fewer to 2,677 more cars on the road than on the Friday 13th, on average.
+* <span id="highlight">on Friday 13th there are 995 to 2,677 fewer cars on the road than on the Friday 6th, on average</span>.
+  
+## Synthesis
+
+Does the conclusion from the hypothesis test agree with the findings of the confidence interval?
+
+<span id = "highlight">Yes, the hypothesis test found a significant difference, and the CI does not contain the null value of 0.</span>
+
+Do you think the findings of this study suggests that people believe Friday 13th is a day of bad luck?
+
+<span id="highlight">No, this is an observational study. We have just observed a significant difference between the number of cars on the road on these two days. We have not tested for people's beliefs.</span>
+ 
+## Recap: Inference using a small sample mean
+If $n < 30$, sample means follow a $t$ distribution with $\text{SE} = \frac{s}{\sqrt{n}}$.
+
+**Conditions**:
+* independence of observations (often verified by a random sample, and if sampling without replacement, $n < 10\%$ of population)
+* $n < 30$ and no extreme skew
+
+**Hypothesis Testing**: 
+$$
+t_\text{df} = \frac{\text{point estimate} - \text{null value}}{SE}, \text{ where } df = n-1.
+$$
+
+**Confidence Interval**:
+$$
+\text{point estimate} \pm t_{df}^* \times SE.
+$$
+
+## One Final Note
+
+**Note**: The example we used was for paired means (difference between dependent groups). We took the difference between the observations and used only these differences (one sample) in our analysis, therefore the mechanics are the same as when we are working with just one sample.
+
+<!-- This is Chapter 4.2 in the text, slides by Mine Cetinkaya-Rundel -->
+
+# Ch. 4.2 - Paired Data
+
+## Paired Observations
+200 observations were randomly sampled from the *High School and Beyond* survey. The same students took a reading and writing test and their scores are shown below. At a first glance, does there appear to be a difference between the average reading and writing test score?
+
+<center>
+```{r, out.width = "550px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_2_high_school.png")
+```
+</center>
+
+## Paired Observations
+The same students took a reading and writing test and their scores are shown below. Are the reading and writing scores of each student independent of each other?
+<center>
+```{r, out.width = "350px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_2_high_school_table.png")
+```
+</center>
+
+(a) Yes       (b) No
+
+## Paired Observations
+The same students took a reading and writing test and their scores are shown below. Are the reading and writing scores of each student independent of each other?
+<center>
+```{r, out.width = "350px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_2_high_school_table.png")
+```
+</center>
+
+(a) Yes       <span id="highlight">(b) No</span>
+
+## Analyzing Paired Data
+
+When two sets of observations have this special correspondence (not independent), they are said to be **paired**.
+
+To analyze paired data, it is often useful to look at the difference in outcomes of each pair of observations.
+$$
+		\text{diff} = \text{read - write}
+$$
+It is important that we always subtract using a consistent order, from student to student or patient to patient, or whatever our operational unit is.
+
+<center>
+```{r, out.width = "700px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_2_high_school_hist.png")
+```
+</center>
+
+## Parameter and Point Estimate
+
+**Parameter of interest**: Average difference between the reading and writing scores of **all** high school students.
+$$
+		\mu_\text{diff}
+$$
+
+**Point estimate**: Average difference between the reading and writing scores of **sampled** high school students.
+$$
+			\bar{x}_\text{diff}
+$$
+
+## Setting the Hypotheses
+
+If in fact there was no difference between the scores on the reading and writing exams, what would you expect the average difference to be?
+$$
+0
+$$
+What are the hypotheses for testing if there is a difference between the average reading and writing scores?
+
+$$
+H_0: \text{There is no difference between the average reading and writing score,} \mu_\text{diff} = 0
+$$
+versus
+$$
+H_A: \text{There is a difference between the average reading and writing score,} \mu_\text{diff} \neq 0
+$$
+
+## Nothing new here
+The analysis is no different than what we have
+done before.
+
+We have data from one sample: differences. 
+
+We are testing to see if the average difference
+is different than 0.
+
+## Checking assumptions and conditions
+Which of the following is true?
+
+* Since students are sampled randomly and are less than 10% of all high school students, we can assume that the difference between the reading and writing scores of one student in the sample is independent of another.
+* The distribution of differences is bimodal, therefore we cannot continue with the hypothesis test.
+* In order for differences to be random we should have sampled with replacement.
+* Since students are sampled randomly and are less than 10% of all students, we can assume that the sampling distribution of the average difference will be nearly normal.
+
+## Checking assumptions and conditions
+Which of the following is true?
+
+* <span id="highlight">Since students are sampled randomly and are less than 10% of all high school students, we can assume that the difference between the reading and writing scores of one student in the sample is independent of another.</span>
+* The distribution of differences is bimodal, therefore we cannot continue with the hypothesis test.
+* In order for differences to be random we should have sampled with replacement.
+* Since students are sampled randomly and are less than 10% of all students, we can assume that the sampling distribution of the average difference will be nearly normal.
+
+## Calculating the test statistic and the *p*-vale
+
+The observed average difference between the two scores is -0.545 points and the standard deviation of the difference is 8.887 points. Do these data provide convincing evidence of a difference between the average scores on the two exams? Use $\alpha = 0.05$.
+
+<center>
+```{r, out.width = "300px", echo = FALSE}
+knitr::include_graphics("fig/fig_4_2_tdist.png")
+```
+</center>
+$$
+\begin{split}
+Z &= \frac{-0.545 - 0}{\frac{8.887}{\sqrt{200}}} = \frac{-0.545}{0.626} \\
+&= -0.87
+\end{split}
+$$
+with *p*-value of $0.1949 \times 2 = 0.3898$.
+
+## Conclusion
+
+How did we get this *p*-value?
+```{r}
+2 * qt(-0.87, df = 199, lower.tail = TRUE)
+```
+
+Since p-value > 0.05, we fail to reject, and the data do not provide convincing evidence of a difference between the average reading and writing scores.
+
+## Interpretation of *p*-value
+
+Which of the following is the correct interpretation of the p-value?
+
+* Probability that the average scores on the reading and writing exams are equal.
+* Probability that the average scores on the reading and writing exams are different.
+* Probability of obtaining a random sample of 200 students where the average difference between the reading and writing scores is at least 0.545 (in either direction), if in fact the true average difference between the scores is 0.
+* Probability of incorrectly rejecting the null hypothesis if in fact the null hypothesis is true.
+
+## Interpretation of *p*-value
+
+Which of the following is the correct interpretation of the *p*-value?
+
+* Probability that the average scores on the reading and writing exams are equal.
+* Probability that the average scores on the reading and writing exams are different.
+* <span id="highlight">Probability of obtaining a random sample of 200 students where the average difference between the reading and writing scores is at least 0.545 (in either direction), if in fact the true average difference between the scores is 0.</span>
+* Probability of incorrectly rejecting the null hypothesis if in fact the null hypothesis is true.
+
+## Hypothesis Test $\Leftrightarrow$ Confidence Interval
+
+Suppose we were to construct a 95% confidence interval for the average difference between the reading and writing scores. Would you expect this interval to include 0?
+
+* yes
+* no
+* cannot tell from the information given
+
+## Hypothesis Test $\Leftrightarrow$ Confidence Interval
+
+Suppose we were to construct a 95% confidence interval for the average difference between the reading and writing scores. Would you expect this interval to include 0?
+
+* <span id="highlight">yes</span>
+* no
+* cannot tell from the information given
+
+$$
+-0.545 \pm 1.96 \frac{8.887}{\sqrt{200}} = -0.545 \pm 1.96 \times 0.626 = (-1.775, 0.685)
+$$
+
+## General Hypothesis Test Conclusion
+
+There are actually three separate ways we can **finish** a NHST scenario.
+
+* compute the *p*-value, compare it to $\alpha$
+* compute a critical value of a statistic, compare it to the test statistic
+* compute the confidence interval, check if it contains the null hypothesis
+
+Any one of these is sufficient: they will **always** agree.
+
+
+<!-- This is Chapter 4.3 in the text, slides by Mine Cetinkaya-Rundel -->
+<!-- This is Chapter 4.4 in the text, slides by Mine Cetinkaya-Rundel -->
+
