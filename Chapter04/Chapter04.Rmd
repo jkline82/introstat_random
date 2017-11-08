@@ -499,5 +499,172 @@ Any one of these is sufficient: they will **always** agree.
 
 
 <!-- This is Chapter 4.3 in the text, slides by Mine Cetinkaya-Rundel -->
+# Difference of Two Means using the *t* Distribution
+
+## Case Study: Diamonds
+
+* Weights of diamonds are measured in carats. 
+* 1 carat = 100 points, 0.99 carats = 99 points, etc.
+* The difference between the size of a 0.99 carat diamond and a 1 carat diamond is undetectable to the naked human eye, but does the price of a 1 carat diamond tend to be higher than the price of a 0.99 diamond?
+* We are going to test to see if there is a difference between the average prices of 0.99 and 1 carat diamonds.
+* In order to be able to compare equivalent units, we divide the prices of 0.99 carat diamonds by 99 and 1 carat diamonds by 100, and compare the average point prices.
+
+# Data
+
+```{r, echo = FALSE}
+library("ggplot2")
+data(diamonds)
+pt99 <- unlist(diamonds[diamonds$carat == 0.99, "price"]) / 99
+pt100 <- sample(unlist(diamonds[diamonds$carat == 1.00, "price"]), 30, replace = FALSE) / 100
+res <- data.frame(pt99 = c(mean(pt99), sd(pt99), length(pt99)),
+                  pt100 = c(mean(pt100), sd(pt100), length(pt100)))
+res
+```
+
+
 <!-- This is Chapter 4.4 in the text, slides by Mine Cetinkaya-Rundel -->
 
+<!-- This is Chapter 4.5 in the text, slides by Wesley Burr, based on text -->
+
+# The Bootstrap
+
+## Quantifying Uncertainty
+
+The theory required to quantify uncertainty of sample standard deviations
+is quite complex.
+
+* Ideally, we would sample data from the population, again and again
+* Repeat until we have enough standard deviation estimates that we can determine precision of original estimate
+* This is **very expensive**
+
+## The Bootstrap
+
+Since it is expensive to resample from the population, the bootstrap (invented by Bradley Efron in 1979) resamples **from the original sample**.
+
+Given an original sample of size $N$:
+* Randomly sample one observation from the set of size $N$
+* Randomly sample a second observation from the set of size $N$
+* $\cdots$
+* Randomly sample an $N^\text{th}$ observation from the set of size $N$
+
+This, as we've seen before (when doing permutation simulations) is known as **sampling with replacement**. 
+
+## The Bootstrap (ctd.)
+
+Once we have a new, sampled with replacement, sample, we compute our test statistic
+again on the new sample. 
+
+Iterate this process
+* Sample with replacement $N$ times, compute the test statistic
+* Do the entire process again
+* And again ...
+
+This gives the **bootstrap distribution** of the test statistic. 
+
+## Example: Amazon Book Prices
+
+```{r, echo = FALSE}
+load("textbooks.rda")
+```
+
+```{r, eval = FALSE}
+data(textbooks, package = "openintro")
+sd(textbooks$diff)
+```
+
+```{r, echo = FALSE}
+round(sd(textbooks$diff), digits = 3)
+```
+This is the data set from Chapter 4.2: some prices on textbooks from Amazon.com
+and a university bookstore. We have 73 observations of textbook prices, with standard deviation `r round(sd(textbooks$diff), digits = 3)`.
+
+## Example (ctd.)
+
+We can sample from this data set of 73 differences, repeatedly.
+
+```{r, eval = FALSE}
+sd_vec <- vector(length = 10000)
+for(j in 1:10000) {
+  sd_vec[j] <- sd(sample(textbooks$diff, size = 73, replace = TRUE))
+}
+hist(sd_vec)
+```
+
+<center>
+```{r, echo = FALSE, fig.height = 3}
+set.seed(69)
+sd_vec <- vector(length = 10000)
+for(j in 1:10000) {
+  sd_vec[j] <- sd(sample(textbooks$diff, size = 73, replace = TRUE))
+}
+hist(sd_vec, breaks = seq(6, 22, 0.5))
+```
+</center>
+
+## Example (ctd.)
+
+The bootstrap distribution is symmetric, bell-shaped, and centered at `r round(mean(sd_vec), digits = 3)`, near the standard deviation of the textbook data, `r round(sd(textbooks$diff), digits = 3)`. 
+
+* The standard deviation of the bootstrap deviation is `r round(sd(sd_vec), digits = 3)`.
+* We can then use this to quantify the uncertainty of the point estimate
+* This is the **bootstrap estimate** of the **standard error** (SE)
+
+## Conditions for using Bootstrap for Inference
+
+If 
+
+* the observations in the original sample are independent
+* the original sample size $N \geq 30$
+* the bootstrap distribution is approximately normal
+
+then the bootstrap distribution for the standard deviation will be a good approximation of the sampling distribution for the standard deviation.
+
+## Third Condition
+
+How do we check that the bootstrap distribution is approximately normal? **Use a Q-Q plot**!
+
+```{r,eval = FALSE}
+qqnorm(sd_vec)
+```
+<center>
+```{r, fig.height = 3.5, echo = FALSE}
+qqnorm(sd_vec)
+```
+</center>
+
+## Confidence Interval
+
+Once we have the conditions met, we can do standard techniques that require normality: compute confidence intervals, perform inference, etc.
+
+We use the same formula as before:
+
+$$
+\text{point estimate} \pm  t_{df}^* \cdot \text{SE}
+$$
+
+Since we have $N = 73$, this gives $df = N-1 = 72$. Then,
+```{r}
+qt(0.975, df = 72)
+```
+
+## Confidence Interval
+
+We then compute a 95% confidence interval for the standard deviation of the differences in textbook prices:
+
+$$
+\begin{split}
+\text{point estimate} &\pm  t_{df}^* \cdot \text{SE} \\
+14.26 & \pm 1.9935 \cdot 1.587 \\
+(11.096, &17.424)
+\end{split}
+$$
+
+So we say we are 95% confident that the standard deviation of the textbook price differences is between \$11.10 and \$17.42.
+
+## Hypothesis Tests
+
+We can also use this method for the standard error (SE) to compute a hypothesis test. 
+
+## Applicability of Bootstrap
+
+In general, we can use the bootstrap method for other parameters, using the same conditions as we had earlier. However, be careful: **always check** the third condition, for normality of the bootstrap distribution.
