@@ -1718,3 +1718,196 @@ What does the data suggest about goals and grade-level? Remember:
 * $H_A$: grade and goals are dependent. Goals vary by grade.
 
 Since we have *p*>0.3, we do not have a small *p*, and we cannot reject the null. Thus, we fail to reject the null hypothesis: the data do not provide convincing evidence that grade and goals are dependent. It does not appear that goals vary by grade.
+
+<!-- New material here - making slides longer -->
+
+## Tests for Two Categorical Variables
+
+There are **two** tests which can be used to determine whether two categorical variables are related. 
+
+Which test you use depends on **how** the data were **collected**. Both methods use two-way tables, and are
+conducted in similar ways. 
+
+## Tests for Two Categorical Variables
+
+The two tests are called the **Test of Homogeneity** (Test of Sameness) and the **Test of Independence**.
+
+* The Test for Homogeneity collects two (or more) **independent** samples from multiple populations
+    - each object is assigned a categorical value which keeps track  of which group it is from
+    - each object is then measured with respect to a different, second, categorical variable
+* The Test for Independence collects **one** sample
+    - each object in the sample is measured with respect to **two** categorical response variables
+    
+## Examples
+
+* If we collect a large sample of people, and record their marital status and income ...
+* If we collect a random sample of male and female opinions on global warming
+* If we conduct a large survey on undergraduate students at Trent ...
+* If we conduct a large survey on undergraduate students in Ontario ...
+* If we conduct a large survey on undergraduate students in Ontario, by conducting a number of smaller surveys at each university in Ontario ...
+
+
+## Similarities in the Two Approaches
+
+* In both situations we are interested in knowing whether the two categorical variables are related or unrelated
+* Both tests use the same $\chi^2$ test statistic, formula, and $p$-value method
+* The **difference** is in the hypotheses and interpretation/conclusion
+
+## Example: GSS
+
+The General Social Survey asked Canadian adults: “There are 
+always some people whose ideas are considered bad or 
+dangerous by other people. For instance, somebody who is 
+against churches and religion. If such a person wanted to make a 
+speech in your (city/town/community) against churches and 
+religion, should he be allowed to speak, or not?” Respondents 
+were also asked about their income, and categorized into four 
+income levels (in $thousands). The responses for these two 
+questions are summarized in the two‐way table below:
+
+<center>
+```{r, echo = FALSE, out.width = "500px"}
+knitr::include_graphics("fig/fig_3_4_gss.png")
+```
+</center>
+
+## Example: Obesity
+
+A study reported in the medical journal Obesity analyzed data from the 
+National Longitudinal Study of Adolescent Health. Obesity was defined 
+as having a body mass index (BMI) of 30 or more. The research subjects 
+were followed from adolescence to adulthood, and all the people in the 
+sample were categorized in terms of whether they were obese and 
+whether they were dating, cohabiting, or married. What frequencies 
+should we expect if these variables are not related to each other?
+
+<center>
+```{r, echo = FALSE, out.width = "500px"}
+knitr::include_graphics("fig/fig_3_4_obesity.png")
+```
+</center>
+
+## Example: Polling
+A polling organization asks a random sample of people for 
+their party preference (Liberal, Conservative, NDP, Green, or 
+other) and whether they think the minimum wage should be 
+raised, and the organization wanted to test whether party 
+preference and opinion on minimum wage are related.
+
+## Example: Surgery
+
+A large number of surgery patients get infections after 
+surgery, which can sometimes be quite serious. Researchers 
+randomly assigned some surgery patients to receive a simple 
+antibiotic ointment after surgery, others to receive a 
+placebo, and still others to receive just cleansing with soap. 
+We want to test the relationship between treatment and 
+whether or not patients get an infection after surgery.
+
+## Tests of Homogeneity and Independence (both!)
+
+* **Hypotheses**: 
+    - $H_0$: there is no relationship between the two variables
+    - $H_A$: there is a relationship between the two variables
+* **Requirements**
+    - Random samples (independent observations)
+    - large samples (expected frequencies $\geq 5$)
+
+If we have this setup, then the $\chi^2$ test statistic follows a $\chi^2$ distribution with $(R-1)\cdot(C-1)$ degrees of freedom.
+
+## Example: GSS (different data) {.smaller}
+
+Is a person’s level of education related to their marital status? From 
+the Statistics Canada General Social Survey (GSS) conducted in 2011, 
+we took a random sample of 924 adults (aged 18 and older), 
+measuring the marital status of each (married, common‐law, divorced, 
+widowed, single) and their highest level of completed education (high 
+school, college/technical school, university, graduate school). 
+
+               HS   Clg     Uni  Grad
+-------     -----  -----  -----  -----
+Married       104   156     110    117
+Common-Law     23    32      30     19
+Divorced       76     0       0      0
+Widowed        28    10       3      3
+Single        171    29       6      8
+
+## Example: GSS
+
+We can do this analysis in R.
+
+```{r}
+Educ <- matrix(data = c(104, 156, 110, 117, 23, 32, 30, 19, 76, 0, 0, 0, 28, 10, 3, 3, 
+                        171, 29, 6, 8),
+               nrow = 5, ncol = 4, byrow = TRUE)
+chisq.test(Educ)
+```
+
+This is a single sample with two measurements per object (person), so we are performing a $\chi^2$ Test
+of Independence. Our $p$-value is extremely small, so we reject the null.
+
+## Example: GSS 
+
+* The $\chi^2_\text{test} = 349.29$
+* The $p$-value is $p < 0.00001$
+
+The conclusion is then that we do have evidence, at a $\alpha = 0.01$ level, to reject the null hypothesis,
+and conclude that there is a relationship between marital status and highest educational level completed.
+
+## Drawbacks of the $\chi^2$ Test
+
+The $\chi^2$ test reveals only whether two variables **are** related, but not what that relationship is.
+
+If both categorical variables only have two categories (a $2\times 2$ two-way table), the data can be analyzed
+using a two-proportion $z$ test instead, which gives more information (we can setup one-tailed tests specifically).
+
+## Vaccination and Autism
+
+Does the MMR (measles, mumps, rubella) vaccine  cause ASD (autism spectrum disorder) in children?
+The data in the two‐way table are from a study that  investigated when ASD symptoms began in a child, and 
+if their onset is related to when the child received the  MMR vaccine. Children in the study had experienced a 
+gastrointestinal (GI) event, which is a common side effect of the MMR vaccine.
+
+Timing of Vaccination    Developed ASD    Did Not Develop ASD
+---------------------    -------------    -------------------
+Received MMR before GI       12                 3
+Received MMR after GI        13                10
+
+## Vaccination and Autism (ctd.)
+
+We want to determine if there is a connection (relationship) between receiving the MMR vaccine and the
+onset of ASD symptoms.
+
+We can test:
+
+* $H_0$: the onset of ASD symptoms is independent of when the child receives the MMR vaccine
+* $H_A$: the onset of ASD symptoms is related to when the child receives the MMR vaccine
+
+## Vaccination and Autism (ctd.)
+
+The results of the test are:
+
+```{r}
+mmr <- matrix(data = c(12, 3, 13, 10), nrow = 2, ncol = 2, byrow = TRUE)
+chisq.test(mmr)
+```
+
+From this, we **fail to reject $H_0$**, so we conclude that the timing of the MMR vaccine and the onset of
+ASD symptoms are not related.
+
+## Vaccination and Autism (ctd.)
+
+<center>
+```{r, out.width = "750px", echo = FALSE}
+knitr::include_graphics("fig/fig_3_4_autism1.png")
+```
+</center><span id="footnote">https://academic.oup.com/cid/article/48/4/456/284219</span>
+
+## Vaccination and Autism (ctd.)
+
+<center>
+```{r, out.width = "400px", echo = FALSE}
+knitr::include_graphics("fig/fig_3_4_autism2.png")
+```
+</center><span id="footnote">https://www.smbc-comics.com/comic/autism-and-vaccines</span>
+

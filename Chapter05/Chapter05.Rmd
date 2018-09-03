@@ -856,7 +856,7 @@ knitr::include_graphics("fig/fig_5_2_regions.png")
 * south
 * cannot tell
     
- ## Poverty versus Region (northeast, midwest, west, south)
+## Poverty versus Region (northeast, midwest, west, south)
 
 Which region (northeast, midwest, west or south) is the reference level?
 
@@ -877,7 +877,602 @@ knitr::include_graphics("fig/fig_5_2_regions.png")
 (more to come here)
     
 <!-- This is Chapter 5.3 in the text, slides by Mine Cetinkaya-Rundel -->
+# Types of Outliers in Linear Regression
+
+## Types of Outliers
+
+<!-- THIS IS A MUCH BETTER WAY TO DIVIDE INTO COLUMNS -->
+<div class="col2">
+```{r, echo=FALSE, out.width = "450px"}
+knitr::include_graphics("fig/fig_5_3_outlier1.png")
+```
+<p />
+
+**How do outliers influence the least squares line in this plot?**
+
+To answer this question think of where the regression line would be with and without the outlier(s). Without the outliers the regression line would be steeper, and lie closer to the larger group of observations. With the outliers the line is pulled up and away from some of the observations in the larger group.
+</div>
+
+## Types of Outliers
+<div class="col2">
+```{r, echo=FALSE, out.width = "450px"}
+knitr::include_graphics("fig/fig_5_3_outlier2.png")
+```
+<p />
+How do outliers influence the least squares line in this plot?
+</div>
+
+## Types of Outliers
+<div class="col2">
+```{r, echo=FALSE, out.width = "430px"}
+knitr::include_graphics("fig/fig_5_3_outlier2.png")
+```
+<p />
+
+How do outliers influence the least squares line in this plot?
+
+*Without the outlier, there is no evident relationship between $x$ and $y$.*
+</div>
+
+## Some Terminology
+
+* **Outliers** are points that lie away from the cloud  of points.
+
+## Some Terminology
+
+* **Outliers** are points that lie away from the cloud  of points.
+* Outliers that lie horizontally away from the center of the cloud are called **high leverage** points.
+
+## Some Terminology
+
+* **Outliers** are points that lie away from the cloud  of points.
+* Outliers that lie horizontally away from the center of the cloud are called **high leverage** points.
+* High leverage points that actually influence the slope of the regression line are called **influential** points.
+
+## Some Terminology
+
+* **Outliers** are points that lie away from the cloud  of points.
+* Outliers that lie horizontally away from the center of the cloud are called **high leverage** points.
+* High leverage points that actually influence the slope of the regression line are called **influential** points.
+* In order to determine if a point is influential, visualize the regression line with and without the point. Does the slope of the line change considerably? If so, then the point is influential. If not, then it’s not an influential point.A
+
+## Influential Points
+
+Data are available on the log of the surface temperature and the log of the light intensity of 47 stars in the star cluster CYG OB1.
+
+<div class="col2">
+```{r, echo=FALSE, out.width = "450px"}
+knitr::include_graphics("fig/fig_5_3_star1.png")
+```
+
+<p />
+
+```{r, echo = FALSE, out.width = "300px"}
+knitr::include_graphics("fig/fig_5_3_star2.png")
+```
+</div>
+
+## Types of Outliers
+
+<div class="col2">
+```{r, echo = FALSE, out.width = "400px"}
+knitr::include_graphics("fig/fig_5_3_typeout1.png")
+```
+
+<p />
+
+**Which of the below best describes the outlier?**
+
+(a) influential
+(b) high leverage
+(c) none of the above
+(d) there are no outliers
+</div>
+
+## Types of Outliers
+
+<div class="col2">
+```{r, echo = FALSE, out.width = "400px"}
+knitr::include_graphics("fig/fig_5_3_typeout1.png")
+```
+
+<p />
+
+**Which of the below best describes the outlier?**
+
+(a) influential
+(b) <class id="highlight">high leverage</class>
+(c) none of the above
+(d) there are no outliers
 
 
+</div>
+
+## Types of Outliers
+
+<div class="col2">
+```{r, echo = FALSE, out.width = "400px"}
+knitr::include_graphics("fig/fig_5_3_typeout2.png")
+```
+
+<p />
+
+**Does this outlier influence the slope of the regression line?**
+</div>
+
+## Types of Outliers
+
+<div class="col2">
+```{r, echo = FALSE, out.width = "400px"}
+knitr::include_graphics("fig/fig_5_3_typeout2.png")
+```
+
+<p />
+
+Not really ... 
+</div>
+
+## Recap
+
+**Which of the following is true?**
+
+(a) Influential points always change the intercept of the regression line.
+(b) Influential points always reduce R2.
+(c) It is much more likely for a low leverage point to be influential, than a high leverage point.
+(d) When the data set includes an influential point, the relationship between the explanatory variable and the response variable is always nonlinear.
+(e) None of the above.
+
+## Recap
+
+**Which of the following is true?**
+
+(a) Influential points always change the intercept of the regression line.
+(b) Influential points always reduce R2.
+(c) It is much more likely for a low leverage point to be influential, than a high leverage point.
+(d) When the data set includes an influential point, the relationship between the explanatory variable and the response variable is always nonlinear.
+(e) <class id="highlight">None of the above.</class>
+
+## Recap (continued)
+
+<center>
+```{r, echo = FALSE, out.width = "800px"}
+knitr::include_graphics("fig/fig_5_3_r2.png")
+```
+</center>
 
 <!-- This is Chapter 5.4 in the text, slides by Mine Cetinkaya-Rundel -->
+
+# Inference for Linear Regression
+
+## Nature or Nurture?
+
+<div class="col2">
+```{r, echo = FALSE, out.width = "450px"}
+knitr::include_graphics("fig/fig_5_4_iq.png")
+```
+
+<p />
+
+In 1966 Cyril Burt published a paper called *The genetic determination of differences in intelligence: A study of monozygotic twins reared apart?* The data consist of IQ scores for (an assumed random sample of) 27 identical twins, one raised by foster parents, the other by the biological parents.
+</div>
+
+## Practice {.smaller}
+
+**Which of the following is false?**
+<pre>
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       9.20760    9.29990   0.990    0.332    
+bioIQ             0.90144    0.09633   9.358  1.2e-09
+
+Residual standard error: 7.729 on 25 degrees of freedom
+Multiple R-squared: 0.7779,	Adjusted R-squared: 0.769 
+F-statistic: 87.56 on 1 and 25 DF,  p-value: 1.204e-09 
+</pre>
+
+(a) An additional 10 points in the biological twin's IQ is associated with additional 9 points in the foster twin's IQ, on average.
+(b) Roughly 78% of the foster twins' IQs can be accurately predicted by the model.
+(c) The linear model is $\hat{\text{fosterIQ}} = 9.2 + 0.9 \cdot \text{bioIQ}$.
+(d) Foster twins with IQs higher than average IQs tend to have biological twins with higher than average IQs as well.
+
+
+## Practice {.smaller}
+
+**Which of the following is false?**
+<pre>
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       9.20760    9.29990   0.990    0.332    
+bioIQ             0.90144    0.09633   9.358  1.2e-09
+
+Residual standard error: 7.729 on 25 degrees of freedom
+Multiple R-squared: 0.7779,	Adjusted R-squared: 0.769 
+F-statistic: 87.56 on 1 and 25 DF,  p-value: 1.204e-09 
+</pre>
+
+(a) An additional 10 points in the biological twin's IQ is associated with additional 9 points in the foster twin's IQ, on average.
+(b) <span id="highlight">Roughly 78% of the foster twins' IQs can be accurately predicted by the model.</span>
+(c) The linear model is $\hat{\text{fosterIQ}} = 9.2 + 0.9 \cdot \text{bioIQ}$.
+(d) Foster twins with IQs higher than average IQs tend to have biological twins with higher than average IQs as well.
+
+## Testing for the Slope
+
+Assuming that these 27 twins comprise a representative sample of all twins separated at birth, we would like to test if these data provide convincing evidence that the IQ of the biological twin is a significant predictor of IQ of the foster twin. What are the appropriate hypotheses?
+
+(a) $H_0: b_0 = 0; H_A: b_0 \neq 0$
+(b) $H_0: \beta_0 = 0; H_A: \beta_0 \neq 0$
+(c) $H_0: b_1 = 0; H_A: b_1 \neq 0$
+(d) $H_0: \beta_1 = 0; H_A: \beta_1 \neq 0$
+
+## Testing for the Slope
+
+Assuming that these 27 twins comprise a representative sample of all twins separated at birth, we would like to test if these data provide convincing evidence that the IQ of the biological twin is a significant predictor of IQ of the foster twin. What are the appropriate hypotheses?
+
+(a) $H_0: b_0 = 0; H_A: b_0 \neq 0$
+(b) $H_0: \beta_0 = 0; H_A: \beta_0 \neq 0$
+(c) $H_0: b_1 = 0; H_A: b_1 \neq 0$
+(d) <span id="highlight">$H_0: \beta_1 = 0; H_A: \beta_1 \neq 0$</span>
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+* We always use a $t$-test in inference for regression
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+* We always use a $t$-test in inference for regression
+  <br/>(**remember**: $t_\text{test} =$(point estimate - null value)/SE)
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+* We always use a $t$-test in inference for regression
+  <br/>(**remember**: $t_\text{test} =$(point estimate - null value)/SE)
+* The point estimate is $b_1$, the observed slope
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+* We always use a $t$-test in inference for regression
+  <br/>(**remember**: $t_\text{test} =$(point estimate - null value)/SE)
+* The point estimate is $b_1$, the observed slope
+* The standard error, $SE_{b_1}$ is the standard error associated with the slope
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+* We always use a $t$-test in inference for regression
+  <br/>(**remember**: $t_\text{test} =$(point estimate - null value)/SE)
+* The point estimate is $b_1$, the observed slope
+* The standard error, $SE_{b_1}$ is the standard error associated with the slope
+* The degrees of freedom associated with the slope are df = $n-2$, with $n$ the sample size
+
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output1.png")
+```
+</center>
+
+* We always use a $t$-test in inference for regression
+  <br/>(**remember**: $t_\text{test} =$(point estimate - null value)/SE)
+* The point estimate is $b_1$, the observed slope
+* The standard error, $SE_{b_1}$ is the standard error associated with the slope
+* The degrees of freedom associated with the slope are df = $n-2$, with $n$ the sample size
+  <br/>(**remember**: we lose 1 degree of freedom for each parameter we estimate, and in a simple linear regression, we are
+  estimating both $\beta_0$ and $\beta_1$)
+  
+  
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output2.png")
+```
+</center>
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output2.png")
+```
+</center>
+
+$$
+\begin{split}
+t_\text{test} &= \frac{0.9014 - 0}{0.0963} = 9.36 \\
+\end{split}
+$$
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output2.png")
+```
+</center>
+
+$$
+\begin{split}
+t_\text{test} &= \frac{0.9014 - 0}{0.0963} = 9.36 \\
+\text{df} &= 27 - 2 = 25 \\
+\end{split}
+$$
+
+## Testing for the Slope (ctd.)
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_output2.png")
+```
+</center>
+
+$$
+\begin{split}
+t_\text{test} &= \frac{0.9014 - 0}{0.0963} = 9.36 \\
+\text{df} &= 27 - 2 = 25 \\
+p-\text{value} &= P\left( |t_\text{test}| > 9.36 \right) < 0.01
+\end{split}
+$$
+
+## Percent college graduate versus percent Hispanic in Los Angeles
+What can you say about the relationship between % college graduate and % Hispanic in a sample of 100 zip code areas in LA?
+
+<center>
+```{r, echo = FALSE, out.width = "800px"}
+knitr::include_graphics("fig/fig_5_4_la1.png")
+```
+</center>
+
+## % college graduate versus % Hispanic in Los Angeles (another look)
+What can you say about the relationship between % college graduate and % Hispanic in a sample of 100 zip code areas in LA?
+
+<center>
+```{r, echo = FALSE, out.width = "500px"}
+knitr::include_graphics("fig/fig_5_4_la2.png")
+```
+</center>
+
+
+## % college graduate versus % Hispanic in Los Angeles (another look)
+**Which of the below is the best interpretation of the slope?**
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_la3.png")
+```
+</center>
+
+(a) A 1% increase in Hispanic residents in a zip code area in LA is associated with a 75% decrease in % of college grads.
+(b) A 1% increase in Hispanic residents in a zip code area in LA is associated with a 0.75% decrease in % of college grads.
+(c) An additional 1% of Hispanic residents decreases the % of college graduates in a zip code area in LA by 0.75%.
+(d) In zip code areas with no Hispanic residents, % of college graduates is expected to be 75%.
+
+
+## % college graduate versus % Hispanic in Los Angeles (another look)
+**Which of the below is the best interpretation of the slope?**
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_la3.png")
+```
+</center>
+
+(a) A 1% increase in Hispanic residents in a zip code area in LA is associated with a 75% decrease in % of college grads.
+(b) <span id="highlight">A 1% increase in Hispanic residents in a zip code area in LA is associated with a 0.75% decrease in % of college grads.</span>
+(c) An additional 1% of Hispanic residents decreases the % of college graduates in a zip code area in LA by 0.75%.
+(d) In zip code areas with no Hispanic residents, % of college graduates is expected to be 75%.
+
+
+## % college graduate versus % Hispanic in Los Angeles (another look)
+
+Do these data provide convincing evidence that there is a statistically significant relationship between % Hispanic and % college graduates in zip code areas in LA?
+
+<center>
+```{r, echo = FALSE, out.width = "700px"}
+knitr::include_graphics("fig/fig_5_4_la3.png")
+```
+</center>
+
+**How reliable is this p-value** if these zip code areas are not randomly selected?
+
+## % college graduate versus % Hispanic in Los Angeles (another look)
+
+Do these data provide convincing evidence that there is a statistically significant relationship between % Hispanic and % college graduates in zip code areas in LA?
+
+<span id="highlight">Yes, since the p-value for % Hispanic is low, this indicates that the data provide convincing evidence that
+the slope parameter is different to 0.</span>
+
+<center>
+```{r, echo = FALSE, out.width = "700px"}
+knitr::include_graphics("fig/fig_5_4_la3.png")
+```
+</center>
+
+How reliable is this p-value if these zip code areas are not randomly selected?
+
+<span id="highlight">Not very ... </span>
+
+## Confidence Interval for the Slope (back to the Twins example)
+Remember that a confidence interval is calculated as point estimate $\pm$ ME and the degrees of freedom associated with the slope in a simple linear regression is $n - 2$. Which of the below is the correct 95% confidence interval for the slope parameter? Note that the model is based on observations from 27 twins.
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_twins.png")
+```
+</center>
+
+(a) 9.2076 $\pm$ 1.65 $\cdot$ 9.2999
+(b) 0.9014 $\pm$ 2.06 $\cdot$ 0.0963
+(c) 0.9014 $\pm$ 1.96 $\cdot$ 0.0963
+(d) 9.2076 $\pm$ 1.96 $\cdot$ 0.0963
+
+## Confidence Interval for the Slope (back to the Twins example)
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_twins.png")
+```
+</center>
+
+$$
+\begin{split}
+n &= 27 \\
+\text{df} &= 27 - 2 = 25
+\end{split}
+$$
+
+## Confidence Interval for the Slope (back to the Twins example)
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_twins.png")
+```
+</center>
+
+```{r}
+qt(p = 0.975, df = 25, lower.tail = TRUE)
+```
+$$
+\begin{split}
+n &= 27 \\
+\text{df} &= 27 - 2 = 25\\
+t_{25}^* &= 2.06
+\end{split}
+$$
+
+## Confidence Interval for the Slope (back to the Twins example)
+Remember that a confidence interval is calculated as point estimate $\pm$ ME and the degrees of freedom associated with the slope in a simple linear regression is $n - 2$. Which of the below is the correct 95% confidence interval for the slope parameter? Note that the model is based on observations from 27 twins.
+
+<center>
+```{r, echo = FALSE, out.width = "600px"}
+knitr::include_graphics("fig/fig_5_4_twins.png")
+```
+</center>
+
+(a) 9.2076 $\pm$ 1.65 $\cdot$ 9.2999
+(b) <span id="highlight">0.9014 $\pm$ 2.06 $\cdot$ 0.0963</span> 
+(c) 0.9014 $\pm$ 1.96 $\cdot$ 0.0963
+(d) 9.2076 $\pm$ 1.96 $\cdot$ 0.0963
+
+## Recap
+
+* Inference for the slope for a single-predictor linear regression mode:
+
+## Recap
+
+* Inference for the slope for a single-predictor linear regression mode:
+    - Hypothesis test: <br/>
+    $$
+    t_\text{test} = \frac{b_1 - \text{null value}}{SE_{b_1}} \qquad \text{df} = n-2
+    $$
+   
+   
+## Recap
+
+* Inference for the slope for a single-predictor linear regression mode:
+    - Hypothesis test: <br/>
+    $$
+    t_\text{test} = \frac{b_1 - \text{null value}}{SE_{b_1}} \qquad \text{df} = n-2
+    $$
+    - Confidence interval: <br/>
+     $$
+    b_1 \pm t_{\text{df} = n-2}^* \cdot SE_{b_1}
+    $$
+   
+      
+## Recap {.smaller}
+
+* Inference for the slope for a single-predictor linear regression mode:
+    - Hypothesis test: <br/>
+    $$
+    t_\text{test} = \frac{b_1 - \text{null value}}{SE_{b_1}} \qquad \text{df} = n-2
+    $$
+    - Confidence interval: <br/>
+     $$
+    b_1 \pm t_{\text{df} = n-2}^* \cdot SE_{b_1}
+    $$
+* The null value is often $0$ since we are usually checking for **any** relationship between the explanatory and response variables     
+
+ 
+## Recap {.smaller}
+
+* Inference for the slope for a single-predictor linear regression mode:
+    - Hypothesis test: <br/>
+    $$
+    t_\text{test} = \frac{b_1 - \text{null value}}{SE_{b_1}} \qquad \text{df} = n-2
+    $$
+    - Confidence interval: <br/>
+     $$
+    b_1 \pm t_{\text{df} = n-2}^* \cdot SE_{b_1}
+    $$
+* The null value is often $0$ since we are usually checking for **any** relationship between the explanatory and response variables     
+* The regression output gives $b_1$, $SE_{b_1}$ and the **two-tailed** p-value for the $t_\text{test}$ for the slope with a null of $0$
+
+## Recap {.smaller}
+
+* Inference for the slope for a single-predictor linear regression mode:
+    - Hypothesis test: <br/>
+    $$
+    t_\text{test} = \frac{b_1 - \text{null value}}{SE_{b_1}} \qquad \text{df} = n-2
+    $$
+    - Confidence interval: <br/>
+     $$
+    b_1 \pm t_{\text{df} = n-2}^* \cdot SE_{b_1}
+    $$
+* The null value is often $0$ since we are usually checking for **any** relationship between the explanatory and response variables     
+* The regression output gives $b_1$, $SE_{b_1}$ and the **two-tailed** p-value for the $t_\text{test}$ for the slope with a null of $0$
+* We rarely do inference on the intercept, so we'll be focusing on the estimates and inference for the slope
+
+## Caution
+
+* Always be aware of the type of data you're working with: random sample, non-random sample, or population.
+
+## Caution
+
+* Always be aware of the type of data you're working with: random sample, non-random sample, or population.
+* Statistical inference, and the resulting p-values, are meaningless when you already have population data.
+
+## Caution
+
+* Always be aware of the type of data you're working with: random sample, non-random sample, or population.
+* Statistical inference, and the resulting p-values, are meaningless when you already have population data.
+* If you have a sample that is non-random (biased), inference on the results will be unreliable.
+
+## Caution
+
+* Always be aware of the type of data you're working with: random sample, non-random sample, or population.
+* Statistical inference, and the resulting p-values, are meaningless when you already have population data.
+* If you have a sample that is non-random (biased), inference on the results will be unreliable.
+* The ultimate goal is to have independent observations.
